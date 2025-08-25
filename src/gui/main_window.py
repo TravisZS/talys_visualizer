@@ -13,6 +13,8 @@ from PyQt6.QtGui import *
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from config.settings import Settings
 from utils.logger import LoggerMixin
+from .parameter_panels import BasicParameterPanel
+from .calculation_widget import CalculationControlWidget
 
 class MainWindow(QMainWindow, LoggerMixin):
     """主窗口类"""
@@ -66,24 +68,29 @@ class MainWindow(QMainWindow, LoggerMixin):
     def create_parameter_panel(self) -> QWidget:
         """创建参数设置面板"""
         panel = QWidget()
-        panel.setMaximumWidth(400)
-        panel.setMinimumWidth(300)
-        
+        panel.setMaximumWidth(450)
+        panel.setMinimumWidth(350)
+
         layout = QVBoxLayout(panel)
-        
-        # 标题
-        title = QLabel("参数设置")
-        title.setStyleSheet("font-size: 16px; font-weight: bold; margin: 10px;")
-        layout.addWidget(title)
-        
-        # 临时占位内容
-        placeholder = QLabel("参数面板\n(开发中...)")
-        placeholder.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        placeholder.setStyleSheet("color: gray; font-style: italic;")
-        layout.addWidget(placeholder)
-        
-        layout.addStretch()
-        
+        layout.setSpacing(10)
+        layout.setContentsMargins(5, 5, 5, 5)
+
+        # 基础参数面板
+        self.basic_params = BasicParameterPanel()
+        layout.addWidget(self.basic_params)
+
+        # 计算控制组件
+        self.calculation_control = CalculationControlWidget()
+        layout.addWidget(self.calculation_control)
+
+        # 连接信号
+        self.basic_params.parameters_changed.connect(
+            self.calculation_control.update_parameters
+        )
+        self.calculation_control.calculation_completed.connect(
+            self.on_calculation_completed
+        )
+
         return panel
     
     def create_visualization_area(self) -> QWidget:
@@ -247,9 +254,12 @@ class MainWindow(QMainWindow, LoggerMixin):
     
     def run_calculation(self):
         """运行计算"""
-        self.logger.info("运行TALYS计算")
-        self.status_bar.showMessage('运行TALYS计算...', 2000)
-        # TODO: 实现TALYS计算逻辑
+        self.logger.info("通过菜单运行TALYS计算")
+        # 触发计算控制组件的计算
+        if hasattr(self, 'calculation_control'):
+            self.calculation_control.start_calculation()
+        else:
+            self.status_bar.showMessage('计算组件未初始化', 2000)
     
     def stop_calculation(self):
         """停止计算"""
@@ -263,7 +273,160 @@ class MainWindow(QMainWindow, LoggerMixin):
                          f'TALYS核反应计算可视化工具\n'
                          f'作者: {Settings.APP_AUTHOR}')
     
+    def on_calculation_completed(self, results: dict):
+        """计算完成处理"""
+        self.logger.info("收到计算完成信号")
+
+        # 更新状态栏
+        calc_time = results.get('calculation_time', 0)
+        file_count = len(results.get('output_files', []))
+        self.status_bar.showMessage(
+            f'计算完成 - 耗时: {calc_time:.2f}秒, 输出文件: {file_count}个',
+            5000
+        )
+
+        # 更新可视化区域
+        self.update_visualization_area(results)
+
+    def update_visualization_area(self, results: dict):
+        """更新可视化区域显示计算结果"""
+        # 创建结果显示内容
+        result_text = []
+        result_text.append("🎉 TALYS计算完成!")
+        result_text.append("")
+        result_text.append(f"⏱️ 计算耗时: {results.get('calculation_time', 0):.2f} 秒")
+        result_text.append(f"📁 输出文件数: {len(results.get('output_files', []))}")
+
+        if 'total_cross_section' in results:
+            xs_data = results['total_cross_section']
+            data_points = len(xs_data.get('energy', []))
+            result_text.append(f"📊 截面数据点: {data_points}")
+
+        result_text.append("")
+        result_text.append("📋 生成的文件:")
+
+        output_files = results.get('output_files', [])
+        for i, file in enumerate(output_files[:10]):  # 显示前10个文件
+            result_text.append(f"  • {file}")
+
+        if len(output_files) > 10:
+            result_text.append(f"  ... 还有 {len(output_files) - 10} 个文件")
+
+        # 更新可视化区域的占位符
+        if hasattr(self, 'visualization_area'):
+            # 清除现有内容
+            layout = self.visualization_area.layout()
+            if layout:
+                while layout.count():
+                    child = layout.takeAt(0)
+                    if child.widget():
+                        child.widget().deleteLater()
+
+            # 添加新的结果显示
+            title = QLabel("计算结果")
+            title.setStyleSheet("font-size: 16px; font-weight: bold; margin: 10px;")
+            layout.addWidget(title)
+
+            result_label = QLabel('\n'.join(result_text))
+            result_label.setStyleSheet("""
+                QLabel {
+                    background-color: #e8f5e8;
+                    border: 2px solid #27ae60;
+                    border-radius: 10px;
+                    padding: 20px;
+                    font-size: 12px;
+                    line-height: 1.5;
+                }
+            """)
+            result_label.setWordWrap(True)
+            layout.addWidget(result_label)
+
+            # 添加"查看详细结果"按钮
+            view_button = QPushButton("查看详细结果")
+            view_button.setStyleSheet("""
+                QPushButton {
+                    background-color: #3498db;
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    margin: 10px;
+                }
+                QPushButton:hover {
+                    background-color: #2980b9;
+                }
+            """)
+            view_button.clicked.connect(lambda: self.show_detailed_results(results))
+            layout.addWidget(view_button)
+
+            layout.addStretch()
+
+    def show_detailed_results(self, results: dict):
+        """显示详细结果对话框"""
+        dialog = QDialog(self)
+        dialog.setWindowTitle("详细计算结果")
+        dialog.setModal(True)
+        dialog.resize(600, 400)
+
+        layout = QVBoxLayout(dialog)
+
+        # 创建文本显示区域
+        text_area = QTextEdit()
+        text_area.setReadOnly(True)
+        text_area.setFont(QFont("Courier", 10))
+
+        # 格式化详细结果
+        detailed_text = []
+        detailed_text.append("TALYS 计算结果详情")
+        detailed_text.append("=" * 50)
+        detailed_text.append(f"计算耗时: {results.get('calculation_time', 0):.3f} 秒")
+        detailed_text.append(f"输出文件总数: {len(results.get('output_files', []))}")
+        detailed_text.append("")
+
+        # 显示所有输出文件
+        detailed_text.append("输出文件列表:")
+        detailed_text.append("-" * 30)
+        for file in results.get('output_files', []):
+            detailed_text.append(f"  {file}")
+
+        # 显示截面数据（如果有）
+        if 'total_cross_section' in results:
+            xs_data = results['total_cross_section']
+            energies = xs_data.get('energy', [])
+            cross_sections = xs_data.get('cross_section', [])
+
+            detailed_text.append("")
+            detailed_text.append("总截面数据:")
+            detailed_text.append("-" * 30)
+            detailed_text.append(f"数据点数: {len(energies)}")
+
+            if energies and cross_sections:
+                detailed_text.append(f"能量范围: {min(energies):.3f} - {max(energies):.3f} MeV")
+                detailed_text.append(f"截面范围: {min(cross_sections):.3e} - {max(cross_sections):.3e} mb")
+
+                # 显示前几个数据点
+                detailed_text.append("")
+                detailed_text.append("前10个数据点:")
+                detailed_text.append("能量(MeV)    截面(mb)")
+                for i in range(min(10, len(energies))):
+                    detailed_text.append(f"{energies[i]:8.3f}    {cross_sections[i]:12.3e}")
+
+        text_area.setPlainText('\n'.join(detailed_text))
+        layout.addWidget(text_area)
+
+        # 关闭按钮
+        close_button = QPushButton("关闭")
+        close_button.clicked.connect(dialog.accept)
+        layout.addWidget(close_button)
+
+        dialog.exec()
+
     def closeEvent(self, event):
         """窗口关闭事件"""
+        # 停止正在进行的计算
+        if hasattr(self, 'calculation_control'):
+            self.calculation_control.stop_calculation()
+
         self.logger.info("程序退出")
         event.accept()

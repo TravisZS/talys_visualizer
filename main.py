@@ -11,7 +11,7 @@ from PyQt6.QtCore import Qt
 # 添加src目录到Python路径
 sys.path.insert(0, 'src')
 
-from gui.main_window import MainWindow
+from gui.tabbed_main_window import TabbedMainWindow
 from utils.logger import setup_logger
 from config.settings import Settings
 
@@ -31,7 +31,7 @@ def main():
     
     try:
         # 创建主窗口
-        main_window = MainWindow()
+        main_window = TabbedMainWindow()
         main_window.show()
         
         logger.info(f"{Settings.APP_NAME} started successfully")

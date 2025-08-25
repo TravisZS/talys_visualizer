@@ -1,0 +1,228 @@
+{
+  "app_title": "TALYS 可视化工具",
+  "ready": "就绪",
+  
+  "menu_file": "文件(&F)",
+  "menu_edit": "编辑(&E)",
+  "menu_calculate": "计算(&C)",
+  "menu_view": "视图(&V)",
+  "menu_help": "帮助(&H)",
+  
+  "action_new": "新建项目(&N)",
+  "action_open": "打开项目(&O)",
+  "action_save": "保存项目(&S)",
+  "action_import": "导入参数(&I)",
+  "action_export": "导出参数(&E)",
+  "action_exit": "退出(&X)",
+  
+  "action_run": "运行TALYS(&R)",
+  "action_stop": "停止计算(&T)",
+  "action_validate": "验证参数(&V)",
+  
+  "action_fullscreen": "全屏模式(&F)",
+  "action_help": "用户手册(&H)",
+  "action_about": "关于(&A)",
+  
+  "tab_basic": "🎯 基础参数",
+  "tab_advanced": "⚙️ 高级参数",
+  "tab_output": "📄 输出选项",
+  "tab_visualization": "📊 可视化",
+  "tab_expert": "🔧 专家模式",
+
+  "group_target": "目标核",
+  "group_projectile": "入射粒子",
+  "group_energy": "入射能量",
+  "group_calculation": "计算控制",
+
+  "label_atomic_number": "原子序数 (Z):",
+  "label_mass_number": "质量数 (A):",
+  "label_element": "元素符号:",
+  "label_nuclide": "核素:",
+  "label_particle_type": "粒子类型:",
+  "label_energy": "能量:",
+  "label_min": "最小:",
+  "label_max": "最大:",
+  "label_parameter_summary": "当前参数摘要:",
+
+  "radio_single_energy": "单一能量",
+  "radio_energy_range": "能量范围",
+
+  "projectile_neutron": "中子 (n)",
+  "projectile_proton": "质子 (p)",
+  "projectile_deuteron": "氘核 (d)",
+  "projectile_triton": "氚核 (t)",
+  "projectile_helium3": "氦-3 (h)",
+  "projectile_alpha": "α粒子 (a)",
+  "projectile_gamma": "伽马射线 (g)",
+
+  "info_neutron": "中子：电荷=0，质量=1.008665 u",
+  "info_proton": "质子：电荷=+1，质量=1.007276 u",
+  "info_deuteron": "氘核：电荷=+1，质量=2.013553 u",
+  "info_triton": "氚核：电荷=+1，质量=3.015501 u",
+  "info_helium3": "氦-3：电荷=+2，质量=3.014932 u",
+  "info_alpha": "α粒子：电荷=+2，质量=4.001506 u",
+  "info_gamma": "伽马射线：电荷=0，质量=0",
+  "info_unknown_particle": "未知粒子",
+
+  "tooltip_atomic_number": "目标核的原子序数 (1-118)",
+  "tooltip_mass_number": "目标核的质量数 (1-300)",
+  "tooltip_particle_type": "选择入射粒子类型",
+  "tooltip_energy": "入射粒子能量 (MeV)",
+  "tooltip_single_energy": "计算单个能量点",
+  "tooltip_energy_range": "计算能量范围（开发中）",
+  "tooltip_min_energy": "最小能量 (MeV)",
+  "tooltip_max_energy": "最大能量 (MeV)",
+  "tooltip_run_calculation": "开始TALYS计算",
+  "tooltip_validate": "验证当前参数设置",
+
+  "button_run_calculation": "🚀 运行TALYS计算",
+  "button_validate": "✅ 验证参数",
+
+  "summary_target": "目标核: {0}",
+  "summary_projectile": "入射粒子: {0}",
+  "summary_energy": "入射能量: {0}",
+  "summary_error": "参数摘要更新失败: {0}",
+
+  "validation_title": "参数验证",
+  "validation_success": "所有参数都有效！",
+  "validation_failed": "参数验证失败：{0}",
+
+  "expert_mode_title": "专家模式",
+  "expert_mode_warning": "⚠️ 专家模式允许直接编辑TALYS输入文件。请确保您了解TALYS参数的含义。",
+
+  "visualization_title": "计算结果可视化",
+  "visualization_description": "查看和分析TALYS计算结果。运行计算后，结果将在此处显示。",
+  
+  "basic_title": "基础参数设置",
+  "basic_description": "设置TALYS计算的基本参数。这些是进行核反应计算所必需的参数。",
+  
+  "group_target": "目标核",
+  "label_atomic_number": "原子序数 (Z):",
+  "label_mass_number": "质量数 (A):",
+  "label_element": "元素符号:",
+  "label_nuclide": "核素:",
+  
+  "group_projectile": "入射粒子",
+  "label_particle_type": "粒子类型:",
+  "projectile_neutron": "中子 (n)",
+  "projectile_proton": "质子 (p)",
+  "projectile_deuteron": "氘核 (d)",
+  "projectile_triton": "氚核 (t)",
+  "projectile_helium3": "氦-3 (h)",
+  "projectile_alpha": "α粒子 (a)",
+  "projectile_gamma": "伽马射线 (g)",
+  
+  "group_energy": "入射能量",
+  "label_energy_mode": "能量模式:",
+  "radio_single_energy": "单一能量",
+  "radio_energy_range": "能量范围",
+  "label_energy": "能量:",
+  "label_energy_min": "最小:",
+  "label_energy_max": "最大:",
+  
+  "group_calculation": "计算控制",
+  "button_run": "🚀 运行TALYS计算",
+  "button_validate": "✅ 验证参数",
+  "label_summary": "当前参数摘要:",
+  
+  "advanced_title": "高级参数设置",
+  "advanced_description": "配置TALYS的物理模型和高级计算选项。这些参数影响计算的精度和物理模型选择。",
+  
+  "group_level_density": "能级密度模型",
+  "label_ldmodel": "主模型 (ldmodel):",
+  "label_ldmodelcn": "复合核模型 (ldmodelcn):",
+  
+  "group_gamma_strength": "伽马强度函数",
+  "label_strength": "E1强度函数 (strength):",
+  "label_strengthm1": "M1强度函数 (strengthm1):",
+  
+  "group_optical": "光学模型参数",
+  "label_alphaomp": "α粒子模型 (alphaomp):",
+  "label_deuteronomp": "氘核模型 (deuteronomp):",
+  "label_localomp": "局域模型 (localomp):",
+  
+  "group_numerical": "数值计算参数",
+  "label_bins": "能量分格数 (bins):",
+  "label_maxlevelstar": "最大能级数 (maxlevelstar):",
+  "label_maxrot": "最大转动数 (maxrot):",
+  
+  "output_title": "输出选项设置",
+  "output_description": "控制TALYS计算的输出文件和数据格式。选择需要的输出类型以获得相应的计算结果。",
+  
+  "group_basic_output": "基础输出选项",
+  "group_detailed_output": "详细输出选项",
+  "group_special_output": "特殊输出选项",
+  
+  "output_flagmain": "主要输出 (flagmain)",
+  "output_flagbasic": "基础信息 (flagbasic)",
+  "output_channels": "反应道信息 (channels)",
+  "output_flagpop": "布居信息 (flagpop)",
+  
+  "output_outspectra": "粒子发射能谱 (outspectra)",
+  "output_outangle": "角分布信息 (outangle)",
+  "output_flagddx": "双微分截面 (flagddx)",
+  "output_outlevels": "离散能级信息 (outlevels)",
+  "output_flaggamma": "伽马级联 (flaggamma)",
+  
+  "output_flagrecoil": "反冲信息 (flagrecoil)",
+  "output_flagfission": "裂变信息 (flagfission)",
+  "output_flagcheck": "数值检查 (flagcheck)",
+  "output_flagastro": "天体物理学 (flagastro)",
+  
+  "label_expected_files": "预期输出文件:",
+  
+  "viz_title": "计算结果可视化",
+  "viz_description": "查看和分析TALYS计算结果。运行计算后，结果将在此处显示。",
+  
+  "viz_tab_cross_section": "📈 截面图",
+  "viz_tab_spectra": "📊 能谱图",
+  "viz_tab_angular": "🎯 角分布",
+  "viz_tab_files": "📁 文件查看",
+  
+  "label_plot_type": "图表类型:",
+  "label_log_scale": "对数坐标",
+  "button_export_chart": "导出图表",
+  
+  "expert_title": "专家模式",
+  "expert_warning": "⚠️ 专家模式允许直接编辑TALYS输入文件。请确保您了解TALYS参数的含义。",
+  
+  "expert_tab_input": "📝 输入文件编辑",
+  "expert_tab_advanced": "⚙️ 高级选项",
+  "expert_tab_debug": "🐛 调试信息",
+  
+  "button_load_file": "加载文件",
+  "button_save_file": "保存文件",
+  "button_generate": "生成输入",
+  "button_validate_input": "验证输入",
+  
+  "label_talys_path": "TALYS路径:",
+  "label_timeout": "超时时间:",
+  "label_work_dir": "工作目录:",
+  "label_keep_files": "保留临时文件",
+  
+  "button_ok": "确定",
+  "button_cancel": "取消",
+  "button_apply": "应用",
+  "button_close": "关闭",
+  "button_browse": "浏览...",
+  
+  "status_ready": "就绪",
+  "status_calculating": "计算中...",
+  "status_completed": "计算完成",
+  "status_error": "发生错误",
+  
+  "tooltip_atomic_number": "目标核的原子序数 (1-118)",
+  "tooltip_mass_number": "目标核的质量数 (1-300)",
+  "tooltip_energy": "入射粒子能量 (MeV)",
+  "tooltip_run_calculation": "开始TALYS计算",
+  "tooltip_validate_params": "验证当前参数设置",
+  
+  "language_english": "English",
+  "language_chinese": "中文",
+  "language_japanese": "日本語",
+  "language_french": "Français",
+  "language_german": "Deutsch",
+  
+  "menu_language": "语言(&L)",
+  "action_language": "语言设置"
+}

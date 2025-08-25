@@ -1,0 +1,228 @@
+{
+  "app_title": "TALYS Visualizer",
+  "ready": "Ready",
+  
+  "menu_file": "&File",
+  "menu_edit": "&Edit",
+  "menu_calculate": "&Calculate",
+  "menu_view": "&View",
+  "menu_help": "&Help",
+  
+  "action_new": "&New Project",
+  "action_open": "&Open Project",
+  "action_save": "&Save Project",
+  "action_import": "&Import Parameters",
+  "action_export": "&Export Parameters",
+  "action_exit": "E&xit",
+  
+  "action_run": "&Run TALYS",
+  "action_stop": "&Stop Calculation",
+  "action_validate": "&Validate Parameters",
+  
+  "action_fullscreen": "&Fullscreen",
+  "action_help": "&User Manual",
+  "action_about": "&About",
+  
+  "tab_basic": "🎯 Basic Parameters",
+  "tab_advanced": "⚙️ Advanced Parameters",
+  "tab_output": "📄 Output Options",
+  "tab_visualization": "📊 Visualization",
+  "tab_expert": "🔧 Expert Mode",
+
+  "group_target": "Target Nucleus",
+  "group_projectile": "Projectile",
+  "group_energy": "Incident Energy",
+  "group_calculation": "Calculation Control",
+
+  "label_atomic_number": "Atomic Number (Z):",
+  "label_mass_number": "Mass Number (A):",
+  "label_element": "Element Symbol:",
+  "label_nuclide": "Nuclide:",
+  "label_particle_type": "Particle Type:",
+  "label_energy": "Energy:",
+  "label_min": "Min:",
+  "label_max": "Max:",
+  "label_parameter_summary": "Current Parameter Summary:",
+
+  "radio_single_energy": "Single Energy",
+  "radio_energy_range": "Energy Range",
+
+  "projectile_neutron": "Neutron (n)",
+  "projectile_proton": "Proton (p)",
+  "projectile_deuteron": "Deuteron (d)",
+  "projectile_triton": "Triton (t)",
+  "projectile_helium3": "Helium-3 (h)",
+  "projectile_alpha": "Alpha particle (a)",
+  "projectile_gamma": "Gamma ray (g)",
+
+  "info_neutron": "Neutron: charge=0, mass=1.008665 u",
+  "info_proton": "Proton: charge=+1, mass=1.007276 u",
+  "info_deuteron": "Deuteron: charge=+1, mass=2.013553 u",
+  "info_triton": "Triton: charge=+1, mass=3.015501 u",
+  "info_helium3": "Helium-3: charge=+2, mass=3.014932 u",
+  "info_alpha": "Alpha particle: charge=+2, mass=4.001506 u",
+  "info_gamma": "Gamma ray: charge=0, mass=0",
+  "info_unknown_particle": "Unknown particle",
+
+  "tooltip_atomic_number": "Atomic number of target nucleus (1-118)",
+  "tooltip_mass_number": "Mass number of target nucleus (1-300)",
+  "tooltip_particle_type": "Select incident particle type",
+  "tooltip_energy": "Incident particle energy (MeV)",
+  "tooltip_single_energy": "Calculate for single energy point",
+  "tooltip_energy_range": "Calculate for energy range (under development)",
+  "tooltip_min_energy": "Minimum energy (MeV)",
+  "tooltip_max_energy": "Maximum energy (MeV)",
+  "tooltip_run_calculation": "Start TALYS calculation",
+  "tooltip_validate": "Validate current parameter settings",
+
+  "button_run_calculation": "🚀 Run TALYS Calculation",
+  "button_validate": "✅ Validate Parameters",
+
+  "summary_target": "Target: {0}",
+  "summary_projectile": "Projectile: {0}",
+  "summary_energy": "Energy: {0}",
+  "summary_error": "Parameter summary update failed: {0}",
+
+  "validation_title": "Parameter Validation",
+  "validation_success": "All parameters are valid!",
+  "validation_failed": "Parameter validation failed: {0}",
+
+  "expert_mode_title": "Expert Mode",
+  "expert_mode_warning": "⚠️ Expert mode allows direct editing of TALYS input files. Please ensure you understand the meaning of TALYS parameters.",
+
+  "visualization_title": "Calculation Results Visualization",
+  "visualization_description": "View and analyze TALYS calculation results. Results will be displayed here after running calculations.",
+  
+  "basic_title": "Basic Parameter Settings",
+  "basic_description": "Set basic parameters for TALYS nuclear reaction calculations. These are the essential parameters required for calculations.",
+  
+  "group_target": "Target Nucleus",
+  "label_atomic_number": "Atomic Number (Z):",
+  "label_mass_number": "Mass Number (A):",
+  "label_element": "Element Symbol:",
+  "label_nuclide": "Nuclide:",
+  
+  "group_projectile": "Incident Particle",
+  "label_particle_type": "Particle Type:",
+  "projectile_neutron": "Neutron (n)",
+  "projectile_proton": "Proton (p)",
+  "projectile_deuteron": "Deuteron (d)",
+  "projectile_triton": "Triton (t)",
+  "projectile_helium3": "Helium-3 (h)",
+  "projectile_alpha": "Alpha particle (a)",
+  "projectile_gamma": "Gamma ray (g)",
+  
+  "group_energy": "Incident Energy",
+  "label_energy_mode": "Energy Mode:",
+  "radio_single_energy": "Single Energy",
+  "radio_energy_range": "Energy Range",
+  "label_energy": "Energy:",
+  "label_energy_min": "Minimum:",
+  "label_energy_max": "Maximum:",
+  
+  "group_calculation": "Calculation Control",
+  "button_run": "🚀 Run TALYS Calculation",
+  "button_validate": "✅ Validate Parameters",
+  "label_summary": "Current Parameter Summary:",
+  
+  "advanced_title": "Advanced Parameter Settings",
+  "advanced_description": "Configure TALYS physics models and advanced calculation options. These parameters affect calculation accuracy and physics model selection.",
+  
+  "group_level_density": "Level Density Models",
+  "label_ldmodel": "Main Model (ldmodel):",
+  "label_ldmodelcn": "Compound Nucleus Model (ldmodelcn):",
+  
+  "group_gamma_strength": "Gamma Strength Functions",
+  "label_strength": "E1 Strength Function (strength):",
+  "label_strengthm1": "M1 Strength Function (strengthm1):",
+  
+  "group_optical": "Optical Model Parameters",
+  "label_alphaomp": "Alpha Particle Model (alphaomp):",
+  "label_deuteronomp": "Deuteron Model (deuteronomp):",
+  "label_localomp": "Local Optical Model (localomp):",
+  
+  "group_numerical": "Numerical Calculation Parameters",
+  "label_bins": "Energy Bins (bins):",
+  "label_maxlevelstar": "Max Excited Levels (maxlevelstar):",
+  "label_maxrot": "Max Rotational Quantum Number (maxrot):",
+  
+  "output_title": "Output Options Settings",
+  "output_description": "Control TALYS calculation output files and data formats. Select the required output types to obtain corresponding calculation results.",
+  
+  "group_basic_output": "Basic Output Options",
+  "group_detailed_output": "Detailed Output Options",
+  "group_special_output": "Special Output Options",
+  
+  "output_flagmain": "Main Output (flagmain)",
+  "output_flagbasic": "Basic Information (flagbasic)",
+  "output_channels": "Channel Information (channels)",
+  "output_flagpop": "Population Information (flagpop)",
+  
+  "output_outspectra": "Particle Emission Spectra (outspectra)",
+  "output_outangle": "Angular Distribution (outangle)",
+  "output_flagddx": "Double Differential Cross Section (flagddx)",
+  "output_outlevels": "Discrete Level Information (outlevels)",
+  "output_flaggamma": "Gamma Cascade (flaggamma)",
+  
+  "output_flagrecoil": "Recoil Information (flagrecoil)",
+  "output_flagfission": "Fission Information (flagfission)",
+  "output_flagcheck": "Numerical Check (flagcheck)",
+  "output_flagastro": "Astrophysics (flagastro)",
+  
+  "label_expected_files": "Expected Output Files:",
+  
+  "viz_title": "Calculation Results Visualization",
+  "viz_description": "View and analyze TALYS calculation results. Results will be displayed here after running calculations.",
+  
+  "viz_tab_cross_section": "📈 Cross Sections",
+  "viz_tab_spectra": "📊 Spectra",
+  "viz_tab_angular": "🎯 Angular Distribution",
+  "viz_tab_files": "📁 File Viewer",
+  
+  "label_plot_type": "Chart Type:",
+  "label_log_scale": "Logarithmic Scale",
+  "button_export_chart": "Export Chart",
+  
+  "expert_title": "Expert Mode",
+  "expert_warning": "⚠️ Expert mode allows direct editing of TALYS input files. Please ensure you understand the meaning of TALYS parameters.",
+  
+  "expert_tab_input": "📝 Input File Editor",
+  "expert_tab_advanced": "⚙️ Advanced Options",
+  "expert_tab_debug": "🐛 Debug Information",
+  
+  "button_load_file": "Load File",
+  "button_save_file": "Save File",
+  "button_generate": "Generate Input",
+  "button_validate_input": "Validate Input",
+  
+  "label_talys_path": "TALYS Path:",
+  "label_timeout": "Timeout:",
+  "label_work_dir": "Working Directory:",
+  "label_keep_files": "Keep Temporary Files",
+  
+  "button_ok": "OK",
+  "button_cancel": "Cancel",
+  "button_apply": "Apply",
+  "button_close": "Close",
+  "button_browse": "Browse...",
+  
+  "status_ready": "Ready",
+  "status_calculating": "Calculating...",
+  "status_completed": "Calculation completed",
+  "status_error": "Error occurred",
+  
+  "tooltip_atomic_number": "Target nucleus atomic number (1-118)",
+  "tooltip_mass_number": "Target nucleus mass number (1-300)",
+  "tooltip_energy": "Incident particle energy (MeV)",
+  "tooltip_run_calculation": "Start TALYS calculation",
+  "tooltip_validate_params": "Validate current parameter settings",
+  
+  "language_english": "English",
+  "language_chinese": "中文",
+  "language_japanese": "日本語",
+  "language_french": "Français",
+  "language_german": "Deutsch",
+  
+  "menu_language": "&Language",
+  "action_language": "Language Settings"
+}
