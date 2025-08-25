@@ -1,0 +1,17 @@
+projectile n
+element Pa
+mass 233
+energy 1 2 0.2
+
+
+compound y
+widthfluc y
+
+strength 1
+strengthM1 1
+
+jlmomp y
+jlmmode 3
+
+outbasic y
+outgamdis y

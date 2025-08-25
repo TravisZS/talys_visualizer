@@ -1,0 +1,1217 @@
+Z= 90 A=233
+  Def:   0.519999981      (  0.522375822      +/-    1.60247530E-03 )
+  Heigth :   4.49111032      (   4.42774725      +/-    3.18830796E-02 )
+  Width :  0.647557080      +/-   0.155842900    
+ *******************************************
+  Def:   0.814999998      (  0.788172007      +/-    7.35544227E-03 )
+  Heigth :   1.55461502      (   1.62037635      +/-    4.11583036E-02 )
+  Width :  0.415370524      +/-   0.183234751    
+ *******************************************
+  Def:    1.21700001      (   1.20065200      +/-    9.24967043E-03 )
+  Heigth :   6.31959534      (   6.25504208      +/-    4.31681424E-02 )
+  Width :  0.520400584      +/-   0.332057565    
+ *******************************************
+  Def:    1.59200001      (   1.59440422      +/-    1.86782628E-02 )
+  Heigth :   4.58956003      (   4.66642427      +/-    8.35720375E-02 )
+  Width :  0.321998030      +/-   0.273059130    
+ *******************************************
+  Def:    1.98899996      (   2.01696515      +/-    1.14944503E-02 )
+  Heigth :   5.12387514      (   5.08596563      +/-    1.45104444E-02 )
+  Width :  0.189421222      +/-   0.100294538    
+ *******************************************
+  Uexc     Tdir    TaTb/Ta+Tb     Ta         Tb         Tc    
+
+  Excitation Energy :   0.210653171    
+  BARR  1 at beta2  0.2940 to  0.8150  Mom.Int= 0.255D+02 T= 0.675D-22
+          eps= 0.336 Vdef-E=   1.041
+          eps= 0.388 Vdef-E=   2.555
+          eps= 0.440 Vdef-E=   3.591
+          eps= 0.492 Vdef-E=   4.110
+          eps= 0.544 Vdef-E=   4.126
+          eps= 0.596 Vdef-E=   3.599
+          eps= 0.648 Vdef-E=   2.901
+          eps= 0.700 Vdef-E=   2.134
+          eps= 0.752 Vdef-E=   1.789
+          eps= 0.805 Vdef-E=   1.409
+           Kcal=   25.4176 Tcal=  8.3675E-23
+  BARR  3 at beta2  0.8150 to  1.5920  Mom.Int= 0.486D+02 T= 0.657D-42
+          eps= 0.877 Vdef-E=   1.399
+          eps= 0.955 Vdef-E=   2.139
+          eps= 1.033 Vdef-E=   3.479
+          eps= 1.110 Vdef-E=   5.140
+          eps= 1.188 Vdef-E=   5.911
+          eps= 1.266 Vdef-E=   5.981
+          eps= 1.343 Vdef-E=   5.476
+          eps= 1.421 Vdef-E=   5.068
+          eps= 1.499 Vdef-E=   4.735
+          eps= 1.576 Vdef-E=   4.382
+  BARR  5 at beta2  1.5920 to  2.9703  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.702 Vdef-E=   4.628
+          eps= 1.840 Vdef-E=   4.768
+          eps= 1.978 Vdef-E=   4.893
+          eps= 2.116 Vdef-E=   4.804
+          eps= 2.254 Vdef-E=   4.458
+          eps= 2.391 Vdef-E=   4.328
+          eps= 2.529 Vdef-E=   4.384
+          eps= 2.667 Vdef-E=   4.150
+          eps= 2.805 Vdef-E=   3.990
+          eps= 2.943 Vdef-E=   2.174
+  0.21   0.000D+00  0.364D-43  0.675D-22  0.000D+00  0.657D-42  0.000D+00  0.378D-43  0.255D+02  0.000D+00  0.486D+02  0.000D+00  0.500D+02
+i= 1 E=   0.211 j= 1 T=   6.748E-23
+i= 1 E=   0.211 j= 2 T=   6.572E-43
+i= 1 E=   0.211 j= 3 T=   3.784E-44
+
+  Excitation Energy :   0.421306342    
+  BARR  1 at beta2  0.3039 to  0.8150  Mom.Int= 0.243D+02 T= 0.827D-21
+          eps= 0.345 Vdef-E=   1.097
+          eps= 0.396 Vdef-E=   2.561
+          eps= 0.447 Vdef-E=   3.470
+          eps= 0.498 Vdef-E=   3.937
+          eps= 0.549 Vdef-E=   3.883
+          eps= 0.600 Vdef-E=   3.309
+          eps= 0.651 Vdef-E=   2.662
+          eps= 0.703 Vdef-E=   1.900
+          eps= 0.754 Vdef-E=   1.568
+          eps= 0.805 Vdef-E=   1.197
+           Kcal=   24.1644 Tcal=  1.0257E-21
+  BARR  3 at beta2  0.8150 to  1.5920  Mom.Int= 0.472D+02 T= 0.975D-41
+          eps= 0.877 Vdef-E=   1.188
+          eps= 0.955 Vdef-E=   1.928
+          eps= 1.033 Vdef-E=   3.268
+          eps= 1.110 Vdef-E=   4.929
+          eps= 1.188 Vdef-E=   5.700
+          eps= 1.266 Vdef-E=   5.770
+          eps= 1.343 Vdef-E=   5.265
+          eps= 1.421 Vdef-E=   4.857
+          eps= 1.499 Vdef-E=   4.525
+          eps= 1.576 Vdef-E=   4.171
+  BARR  5 at beta2  1.5920 to  2.9677  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.702 Vdef-E=   4.417
+          eps= 1.840 Vdef-E=   4.558
+          eps= 1.977 Vdef-E=   4.681
+          eps= 2.115 Vdef-E=   4.591
+          eps= 2.252 Vdef-E=   4.250
+          eps= 2.390 Vdef-E=   4.118
+          eps= 2.527 Vdef-E=   4.177
+          eps= 2.665 Vdef-E=   3.943
+          eps= 2.803 Vdef-E=   3.783
+          eps= 2.940 Vdef-E=   2.170
+  0.42   0.000D+00  0.378D-43  0.827D-21  0.000D+00  0.975D-41  0.000D+00  0.378D-43  0.243D+02  0.000D+00  0.472D+02  0.000D+00  0.500D+02
+i= 2 E=   0.421 j= 1 T=   8.268E-22
+i= 2 E=   0.421 j= 2 T=   9.746E-42
+i= 2 E=   0.421 j= 3 T=   3.784E-44
+
+  Excitation Energy :   0.631959498    
+  BARR  1 at beta2  0.3134 to  0.8150  Mom.Int= 0.230D+02 T= 0.103D-19
+          eps= 0.354 Vdef-E=   1.159
+          eps= 0.404 Vdef-E=   2.522
+          eps= 0.454 Vdef-E=   3.345
+          eps= 0.504 Vdef-E=   3.762
+          eps= 0.554 Vdef-E=   3.638
+          eps= 0.604 Vdef-E=   3.023
+          eps= 0.654 Vdef-E=   2.403
+          eps= 0.705 Vdef-E=   1.668
+          eps= 0.755 Vdef-E=   1.348
+          eps= 0.805 Vdef-E=   0.985
+           Kcal=   22.8941 Tcal=  1.3014E-20
+  BARR  3 at beta2  0.8150 to  1.5920  Mom.Int= 0.458D+02 T= 0.162D-39
+          eps= 0.877 Vdef-E=   0.977
+          eps= 0.955 Vdef-E=   1.718
+          eps= 1.033 Vdef-E=   3.058
+          eps= 1.110 Vdef-E=   4.719
+          eps= 1.188 Vdef-E=   5.490
+          eps= 1.266 Vdef-E=   5.559
+          eps= 1.343 Vdef-E=   5.055
+          eps= 1.421 Vdef-E=   4.646
+          eps= 1.499 Vdef-E=   4.314
+          eps= 1.576 Vdef-E=   3.960
+  BARR  5 at beta2  1.5920 to  2.9650  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.702 Vdef-E=   4.206
+          eps= 1.839 Vdef-E=   4.347
+          eps= 1.976 Vdef-E=   4.469
+          eps= 2.114 Vdef-E=   4.377
+          eps= 2.251 Vdef-E=   4.042
+          eps= 2.388 Vdef-E=   3.908
+          eps= 2.526 Vdef-E=   3.971
+          eps= 2.663 Vdef-E=   3.735
+          eps= 2.800 Vdef-E=   3.575
+          eps= 2.938 Vdef-E=   2.166
+  0.63   0.000D+00  0.378D-43  0.103D-19  0.000D+00  0.162D-39  0.000D+00  0.378D-43  0.230D+02  0.000D+00  0.458D+02  0.000D+00  0.500D+02
+i= 3 E=   0.632 j= 1 T=   1.033E-20
+i= 3 E=   0.632 j= 2 T=   1.621E-40
+i= 3 E=   0.632 j= 3 T=   3.784E-44
+
+  Excitation Energy :   0.842612684    
+  BARR  1 at beta2  0.3210 to  0.8150  Mom.Int= 0.217D+02 T= 0.130D-18
+          eps= 0.360 Vdef-E=   1.164
+          eps= 0.410 Vdef-E=   2.443
+          eps= 0.459 Vdef-E=   3.192
+          eps= 0.509 Vdef-E=   3.580
+          eps= 0.558 Vdef-E=   3.393
+          eps= 0.608 Vdef-E=   2.752
+          eps= 0.657 Vdef-E=   2.150
+          eps= 0.706 Vdef-E=   1.440
+          eps= 0.756 Vdef-E=   1.129
+          eps= 0.805 Vdef-E=   0.774
+           Kcal=   21.7025 Tcal=  1.4108E-19
+  BARR  3 at beta2  0.8150 to  1.5920  Mom.Int= 0.443D+02 T= 0.309D-38
+          eps= 0.877 Vdef-E=   0.767
+          eps= 0.955 Vdef-E=   1.507
+          eps= 1.033 Vdef-E=   2.847
+          eps= 1.110 Vdef-E=   4.508
+          eps= 1.188 Vdef-E=   5.279
+          eps= 1.266 Vdef-E=   5.349
+          eps= 1.343 Vdef-E=   4.844
+          eps= 1.421 Vdef-E=   4.436
+          eps= 1.499 Vdef-E=   4.103
+          eps= 1.576 Vdef-E=   3.750
+  BARR  5 at beta2  1.5920 to  2.9623  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.702 Vdef-E=   3.996
+          eps= 1.839 Vdef-E=   4.136
+          eps= 1.976 Vdef-E=   4.257
+          eps= 2.113 Vdef-E=   4.164
+          eps= 2.250 Vdef-E=   3.834
+          eps= 2.387 Vdef-E=   3.698
+          eps= 2.524 Vdef-E=   3.764
+          eps= 2.661 Vdef-E=   3.527
+          eps= 2.798 Vdef-E=   3.368
+          eps= 2.935 Vdef-E=   2.162
+  0.84   0.000D+00  0.378D-43  0.130D-18  0.000D+00  0.309D-38  0.000D+00  0.378D-43  0.217D+02  0.000D+00  0.443D+02  0.000D+00  0.500D+02
+i= 4 E=   0.843 j= 1 T=   1.304E-19
+i= 4 E=   0.843 j= 2 T=   3.094E-39
+i= 4 E=   0.843 j= 3 T=   3.784E-44
+
+  Excitation Energy :    1.05326581    
+  BARR  1 at beta2  0.3285 to  0.8150  Mom.Int= 0.204D+02 T= 0.183D-17
+          eps= 0.367 Vdef-E=   1.170
+          eps= 0.416 Vdef-E=   2.365
+          eps= 0.465 Vdef-E=   3.032
+          eps= 0.513 Vdef-E=   3.398
+          eps= 0.562 Vdef-E=   3.148
+          eps= 0.611 Vdef-E=   2.482
+          eps= 0.659 Vdef-E=   1.897
+          eps= 0.708 Vdef-E=   1.212
+          eps= 0.757 Vdef-E=   0.911
+          eps= 0.805 Vdef-E=   0.562
+           Kcal=   20.3092 Tcal=  2.2892E-18
+  BARR  3 at beta2  0.8150 to  1.5920  Mom.Int= 0.428D+02 T= 0.706D-37
+          eps= 0.877 Vdef-E=   0.556
+          eps= 0.955 Vdef-E=   1.296
+          eps= 1.033 Vdef-E=   2.636
+          eps= 1.110 Vdef-E=   4.297
+          eps= 1.188 Vdef-E=   5.068
+          eps= 1.266 Vdef-E=   5.138
+          eps= 1.343 Vdef-E=   4.633
+          eps= 1.421 Vdef-E=   4.225
+          eps= 1.499 Vdef-E=   3.893
+          eps= 1.576 Vdef-E=   3.539
+  BARR  5 at beta2  1.5920 to  2.9596  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.701 Vdef-E=   3.785
+          eps= 1.838 Vdef-E=   3.925
+          eps= 1.975 Vdef-E=   4.045
+          eps= 2.112 Vdef-E=   3.951
+          eps= 2.248 Vdef-E=   3.626
+          eps= 2.385 Vdef-E=   3.488
+          eps= 2.522 Vdef-E=   3.558
+          eps= 2.659 Vdef-E=   3.319
+          eps= 2.796 Vdef-E=   3.161
+          eps= 2.932 Vdef-E=   2.157
+  1.05   0.000D+00  0.378D-43  0.183D-17  0.000D+00  0.706D-37  0.000D+00  0.378D-43  0.204D+02  0.000D+00  0.428D+02  0.000D+00  0.500D+02
+i= 5 E=   1.053 j= 1 T=   1.832E-18
+i= 5 E=   1.053 j= 2 T=   7.059E-38
+i= 5 E=   1.053 j= 3 T=   3.784E-44
+
+  Excitation Energy :    1.26391900    
+  BARR  1 at beta2  0.3361 to  0.8150  Mom.Int= 0.190D+02 T= 0.289D-16
+          eps= 0.374 Vdef-E=   1.147
+          eps= 0.422 Vdef-E=   2.286
+          eps= 0.470 Vdef-E=   2.872
+          eps= 0.518 Vdef-E=   3.216
+          eps= 0.566 Vdef-E=   2.903
+          eps= 0.614 Vdef-E=   2.211
+          eps= 0.662 Vdef-E=   1.644
+          eps= 0.710 Vdef-E=   0.984
+          eps= 0.758 Vdef-E=   0.693
+          eps= 0.805 Vdef-E=   0.350
+           Kcal=   19.0062 Tcal=  3.1003E-17
+  BARR  3 at beta2  0.8150 to  1.5920  Mom.Int= 0.411D+02 T= 0.208D-35
+          eps= 0.877 Vdef-E=   0.345
+          eps= 0.955 Vdef-E=   1.086
+          eps= 1.033 Vdef-E=   2.426
+          eps= 1.110 Vdef-E=   4.087
+          eps= 1.188 Vdef-E=   4.858
+          eps= 1.266 Vdef-E=   4.927
+          eps= 1.343 Vdef-E=   4.423
+          eps= 1.421 Vdef-E=   4.014
+          eps= 1.499 Vdef-E=   3.682
+          eps= 1.576 Vdef-E=   3.328
+  BARR  5 at beta2  1.5920 to  2.9570  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.701 Vdef-E=   3.574
+          eps= 1.838 Vdef-E=   3.714
+          eps= 1.974 Vdef-E=   3.833
+          eps= 2.111 Vdef-E=   3.738
+          eps= 2.247 Vdef-E=   3.418
+          eps= 2.384 Vdef-E=   3.278
+          eps= 2.520 Vdef-E=   3.352
+          eps= 2.657 Vdef-E=   3.110
+          eps= 2.793 Vdef-E=   2.954
+          eps= 2.930 Vdef-E=   2.153
+  1.26   0.000D+00  0.378D-43  0.289D-16  0.000D+00  0.208D-35  0.000D+00  0.378D-43  0.190D+02  0.000D+00  0.411D+02  0.000D+00  0.500D+02
+i= 6 E=   1.264 j= 1 T=   2.894E-17
+i= 6 E=   1.264 j= 2 T=   2.076E-36
+i= 6 E=   1.264 j= 3 T=   3.784E-44
+
+  Excitation Energy :    1.47457218    
+  BARR  1 at beta2  0.3434 to  0.8150  Mom.Int= 0.175D+02 T= 0.577D-15
+          eps= 0.381 Vdef-E=   1.114
+          eps= 0.428 Vdef-E=   2.182
+          eps= 0.475 Vdef-E=   2.711
+          eps= 0.523 Vdef-E=   3.000
+          eps= 0.570 Vdef-E=   2.659
+          eps= 0.617 Vdef-E=   1.943
+          eps= 0.664 Vdef-E=   1.393
+          eps= 0.711 Vdef-E=   0.757
+          eps= 0.758 Vdef-E=   0.475
+          eps= 0.806 Vdef-E=   0.139
+           Kcal=   17.4346 Tcal=  7.1861E-16
+  BARR  3 at beta2  0.8150 to  1.5920  Mom.Int= 0.392D+02 T= 0.975D-34
+          eps= 0.877 Vdef-E=   0.135
+          eps= 0.955 Vdef-E=   0.875
+          eps= 1.033 Vdef-E=   2.215
+          eps= 1.110 Vdef-E=   3.876
+          eps= 1.188 Vdef-E=   4.647
+          eps= 1.266 Vdef-E=   4.717
+          eps= 1.343 Vdef-E=   4.212
+          eps= 1.421 Vdef-E=   3.804
+          eps= 1.499 Vdef-E=   3.471
+          eps= 1.576 Vdef-E=   3.118
+  BARR  5 at beta2  1.5920 to  2.9543  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.701 Vdef-E=   3.363
+          eps= 1.837 Vdef-E=   3.503
+          eps= 1.973 Vdef-E=   3.621
+          eps= 2.110 Vdef-E=   3.524
+          eps= 2.246 Vdef-E=   3.210
+          eps= 2.382 Vdef-E=   3.068
+          eps= 2.518 Vdef-E=   3.145
+          eps= 2.655 Vdef-E=   2.902
+          eps= 2.791 Vdef-E=   2.747
+          eps= 2.927 Vdef-E=   2.149
+  1.47   0.000D+00  0.378D-43  0.577D-15  0.000D+00  0.975D-34  0.000D+00  0.378D-43  0.175D+02  0.000D+00  0.392D+02  0.000D+00  0.500D+02
+i= 7 E=   1.475 j= 1 T=   5.770E-16
+i= 7 E=   1.475 j= 2 T=   9.753E-35
+i= 7 E=   1.475 j= 3 T=   3.784E-44
+
+  Excitation Energy :    1.68522537    
+  BARR  1 at beta2  0.3502 to  0.7941  Mom.Int= 0.158D+02 T= 0.186D-13
+          eps= 0.386 Vdef-E=   1.025
+          eps= 0.430 Vdef-E=   1.994
+          eps= 0.474 Vdef-E=   2.491
+          eps= 0.519 Vdef-E=   2.799
+          eps= 0.563 Vdef-E=   2.505
+          eps= 0.608 Vdef-E=   1.908
+          eps= 0.652 Vdef-E=   1.392
+          eps= 0.696 Vdef-E=   0.700
+          eps= 0.741 Vdef-E=   0.391
+          eps= 0.785 Vdef-E=   0.055
+           Kcal=   15.7312 Tcal=  2.1680E-14
+  WELL  2 at beta2  0.7941 to  0.8886  Mom.Int= 0.804D+00
+  BARR  3 at beta2  0.8886 to  1.5920  Mom.Int= 0.368D+02 T= 0.107D-31
+          eps= 0.945 Vdef-E=   0.547
+          eps= 1.015 Vdef-E=   1.662
+          eps= 1.086 Vdef-E=   3.188
+          eps= 1.156 Vdef-E=   4.142
+          eps= 1.226 Vdef-E=   4.588
+          eps= 1.297 Vdef-E=   4.427
+          eps= 1.367 Vdef-E=   3.913
+          eps= 1.437 Vdef-E=   3.483
+          eps= 1.508 Vdef-E=   3.211
+          eps= 1.578 Vdef-E=   2.907
+  BARR  5 at beta2  1.5920 to  2.9516  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.701 Vdef-E=   3.153
+          eps= 1.837 Vdef-E=   3.292
+          eps= 1.973 Vdef-E=   3.409
+          eps= 2.109 Vdef-E=   3.311
+          eps= 2.245 Vdef-E=   3.002
+          eps= 2.381 Vdef-E=   2.858
+          eps= 2.517 Vdef-E=   2.939
+          eps= 2.653 Vdef-E=   2.694
+          eps= 2.788 Vdef-E=   2.539
+          eps= 2.924 Vdef-E=   2.145
+  1.69   0.000D+00  0.378D-43  0.186D-13  0.000D+00  0.107D-31  0.000D+00  0.378D-43  0.158D+02  0.804D+00  0.368D+02  0.000D+00  0.500D+02
+i= 8 E=   1.685 j= 1 T=   1.864E-14
+i= 8 E=   1.685 j= 2 T=   1.074E-32
+i= 8 E=   1.685 j= 3 T=   3.784E-44
+
+  Excitation Energy :    1.89587855    
+  BARR  1 at beta2  0.3569 to  0.7647  Mom.Int= 0.141D+02 T= 0.526D-12
+          eps= 0.390 Vdef-E=   0.918
+          eps= 0.430 Vdef-E=   1.787
+          eps= 0.471 Vdef-E=   2.249
+          eps= 0.512 Vdef-E=   2.546
+          eps= 0.553 Vdef-E=   2.386
+          eps= 0.593 Vdef-E=   1.965
+          eps= 0.634 Vdef-E=   1.344
+          eps= 0.675 Vdef-E=   0.782
+          eps= 0.716 Vdef-E=   0.289
+          eps= 0.757 Vdef-E=   0.069
+           Kcal=   14.0319 Tcal=  6.4872E-13
+  WELL  2 at beta2  0.7647 to  0.9140  Mom.Int= 0.211D+01
+  BARR  3 at beta2  0.9140 to  1.5920  Mom.Int= 0.351D+02 T= 0.333D-30
+          eps= 0.968 Vdef-E=   0.644
+          eps= 1.036 Vdef-E=   1.860
+          eps= 1.104 Vdef-E=   3.338
+          eps= 1.172 Vdef-E=   4.109
+          eps= 1.239 Vdef-E=   4.313
+          eps= 1.307 Vdef-E=   4.009
+          eps= 1.375 Vdef-E=   3.650
+          eps= 1.443 Vdef-E=   3.234
+          eps= 1.511 Vdef-E=   2.974
+          eps= 1.578 Vdef-E=   2.696
+  BARR  5 at beta2  1.5920 to  2.9490  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.701 Vdef-E=   2.942
+          eps= 1.836 Vdef-E=   3.081
+          eps= 1.972 Vdef-E=   3.197
+          eps= 2.108 Vdef-E=   3.098
+          eps= 2.243 Vdef-E=   2.794
+          eps= 2.379 Vdef-E=   2.648
+          eps= 2.515 Vdef-E=   2.732
+          eps= 2.650 Vdef-E=   2.485
+          eps= 2.786 Vdef-E=   2.330
+          eps= 2.922 Vdef-E=   2.007
+  1.90   0.000D+00  0.378D-43  0.526D-12  0.000D+00  0.333D-30  0.000D+00  0.378D-43  0.141D+02  0.211D+01  0.351D+02  0.000D+00  0.500D+02
+i= 9 E=   1.896 j= 1 T=   5.260E-13
+i= 9 E=   1.896 j= 2 T=   3.330E-31
+i= 9 E=   1.896 j= 3 T=   3.784E-44
+
+  Excitation Energy :    2.10653162    
+  BARR  1 at beta2  0.3637 to  0.7337  Mom.Int= 0.125D+02 T= 0.140D-10
+          eps= 0.393 Vdef-E=   0.807
+          eps= 0.430 Vdef-E=   1.576
+          eps= 0.467 Vdef-E=   2.003
+          eps= 0.504 Vdef-E=   2.289
+          eps= 0.541 Vdef-E=   2.248
+          eps= 0.578 Vdef-E=   1.952
+          eps= 0.615 Vdef-E=   1.341
+          eps= 0.652 Vdef-E=   0.966
+          eps= 0.689 Vdef-E=   0.353
+          eps= 0.726 Vdef-E=   0.032
+           Kcal=   12.4683 Tcal=  1.4796E-11
+  WELL  2 at beta2  0.7337 to  0.9340  Mom.Int= 0.348D+01
+  BARR  3 at beta2  0.9340 to  1.5920  Mom.Int= 0.335D+02 T= 0.864D-29
+          eps= 0.987 Vdef-E=   0.720
+          eps= 1.052 Vdef-E=   1.981
+          eps= 1.118 Vdef-E=   3.389
+          eps= 1.184 Vdef-E=   3.975
+          eps= 1.250 Vdef-E=   4.074
+          eps= 1.316 Vdef-E=   3.677
+          eps= 1.381 Vdef-E=   3.398
+          eps= 1.447 Vdef-E=   2.993
+          eps= 1.513 Vdef-E=   2.744
+          eps= 1.579 Vdef-E=   2.485
+  BARR  5 at beta2  1.5920 to  2.9463  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.700 Vdef-E=   2.731
+          eps= 1.836 Vdef-E=   2.870
+          eps= 1.971 Vdef-E=   2.985
+          eps= 2.107 Vdef-E=   2.885
+          eps= 2.242 Vdef-E=   2.586
+          eps= 2.377 Vdef-E=   2.438
+          eps= 2.513 Vdef-E=   2.526
+          eps= 2.648 Vdef-E=   2.277
+          eps= 2.784 Vdef-E=   2.121
+          eps= 2.919 Vdef-E=   1.805
+  2.11   0.000D+00  0.378D-43  0.140D-10  0.000D+00  0.864D-29  0.000D+00  0.378D-43  0.125D+02  0.348D+01  0.335D+02  0.000D+00  0.500D+02
+i=10 E=   2.107 j= 1 T=   1.396E-11
+i=10 E=   2.107 j= 2 T=   8.642E-30
+i=10 E=   2.107 j= 3 T=   3.784E-44
+
+  Excitation Energy :    2.31718469    
+  BARR  1 at beta2  0.3709 to  0.7030  Mom.Int= 0.111D+02 T= 0.235D-09
+          eps= 0.397 Vdef-E=   0.704
+          eps= 0.431 Vdef-E=   1.370
+          eps= 0.464 Vdef-E=   1.760
+          eps= 0.497 Vdef-E=   2.035
+          eps= 0.530 Vdef-E=   2.108
+          eps= 0.564 Vdef-E=   1.871
+          eps= 0.597 Vdef-E=   1.482
+          eps= 0.630 Vdef-E=   0.961
+          eps= 0.663 Vdef-E=   0.567
+          eps= 0.696 Vdef-E=   0.069
+           Kcal=   11.0553 Tcal=  2.4972E-10
+  WELL  2 at beta2  0.7030 to  0.9521  Mom.Int= 0.506D+01
+  BARR  3 at beta2  0.9521 to  1.5920  Mom.Int= 0.319D+02 T= 0.199D-27
+          eps= 1.003 Vdef-E=   0.797
+          eps= 1.067 Vdef-E=   2.132
+          eps= 1.131 Vdef-E=   3.391
+          eps= 1.195 Vdef-E=   3.890
+          eps= 1.259 Vdef-E=   3.855
+          eps= 1.323 Vdef-E=   3.440
+          eps= 1.387 Vdef-E=   3.150
+          eps= 1.451 Vdef-E=   2.770
+          eps= 1.515 Vdef-E=   2.515
+          eps= 1.579 Vdef-E=   2.275
+  BARR  5 at beta2  1.5920 to  2.9436  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.700 Vdef-E=   2.521
+          eps= 1.835 Vdef-E=   2.659
+          eps= 1.970 Vdef-E=   2.773
+          eps= 2.106 Vdef-E=   2.671
+          eps= 2.241 Vdef-E=   2.378
+          eps= 2.376 Vdef-E=   2.228
+          eps= 2.511 Vdef-E=   2.319
+          eps= 2.646 Vdef-E=   2.069
+          eps= 2.781 Vdef-E=   1.912
+          eps= 2.917 Vdef-E=   1.602
+  2.32   0.000D+00  0.378D-43  0.235D-09  0.000D+00  0.199D-27  0.000D+00  0.378D-43  0.111D+02  0.506D+01  0.319D+02  0.000D+00  0.500D+02
+i=11 E=   2.317 j= 1 T=   2.346E-10
+i=11 E=   2.317 j= 2 T=   1.988E-28
+i=11 E=   2.317 j= 3 T=   3.784E-44
+
+  Excitation Energy :    2.52783775    
+  BARR  1 at beta2  0.3788 to  0.6836  Mom.Int= 0.982D+01 T= 0.296D-08
+          eps= 0.403 Vdef-E=   0.616
+          eps= 0.434 Vdef-E=   1.197
+          eps= 0.464 Vdef-E=   1.552
+          eps= 0.495 Vdef-E=   1.809
+          eps= 0.525 Vdef-E=   1.930
+          eps= 0.556 Vdef-E=   1.729
+          eps= 0.586 Vdef-E=   1.463
+          eps= 0.617 Vdef-E=   0.896
+          eps= 0.647 Vdef-E=   0.595
+          eps= 0.678 Vdef-E=   0.106
+           Kcal=    9.7898 Tcal=  3.1386E-09
+  WELL  2 at beta2  0.6836 to  0.9674  Mom.Int= 0.659D+01
+  BARR  3 at beta2  0.9674 to  1.5920  Mom.Int= 0.304D+02 T= 0.431D-26
+          eps= 1.017 Vdef-E=   0.864
+          eps= 1.080 Vdef-E=   2.228
+          eps= 1.142 Vdef-E=   3.263
+          eps= 1.205 Vdef-E=   3.751
+          eps= 1.267 Vdef-E=   3.668
+          eps= 1.330 Vdef-E=   3.207
+          eps= 1.392 Vdef-E=   2.908
+          eps= 1.455 Vdef-E=   2.552
+          eps= 1.517 Vdef-E=   2.289
+          eps= 1.580 Vdef-E=   2.064
+  BARR  5 at beta2  1.5920 to  2.9409  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.700 Vdef-E=   2.310
+          eps= 1.835 Vdef-E=   2.448
+          eps= 1.970 Vdef-E=   2.562
+          eps= 2.105 Vdef-E=   2.458
+          eps= 2.239 Vdef-E=   2.170
+          eps= 2.374 Vdef-E=   2.018
+          eps= 2.509 Vdef-E=   2.113
+          eps= 2.644 Vdef-E=   1.861
+          eps= 2.779 Vdef-E=   1.703
+          eps= 2.914 Vdef-E=   1.399
+  2.53   0.000D+00  0.378D-43  0.296D-08  0.000D+00  0.431D-26  0.000D+00  0.378D-43  0.982D+01  0.659D+01  0.304D+02  0.000D+00  0.500D+02
+i=12 E=   2.528 j= 1 T=   2.957E-09
+i=12 E=   2.528 j= 2 T=   4.309E-27
+i=12 E=   2.528 j= 3 T=   3.784E-44
+
+  Excitation Energy :    2.73849082    
+  BARR  1 at beta2  0.3867 to  0.6715  Mom.Int= 0.863D+01 T= 0.318D-07
+          eps= 0.410 Vdef-E=   0.539
+          eps= 0.438 Vdef-E=   1.040
+          eps= 0.466 Vdef-E=   1.363
+          eps= 0.495 Vdef-E=   1.600
+          eps= 0.523 Vdef-E=   1.731
+          eps= 0.552 Vdef-E=   1.548
+          eps= 0.580 Vdef-E=   1.302
+          eps= 0.609 Vdef-E=   0.831
+          eps= 0.637 Vdef-E=   0.473
+          eps= 0.666 Vdef-E=   0.099
+           Kcal=    8.5449 Tcal=  3.7843E-08
+  WELL  2 at beta2  0.6715 to  0.9816  Mom.Int= 0.806D+01
+  BARR  3 at beta2  0.9816 to  1.5920  Mom.Int= 0.288D+02 T= 0.890D-25
+          eps= 1.030 Vdef-E=   0.911
+          eps= 1.091 Vdef-E=   2.256
+          eps= 1.153 Vdef-E=   3.064
+          eps= 1.214 Vdef-E=   3.570
+          eps= 1.275 Vdef-E=   3.479
+          eps= 1.336 Vdef-E=   2.975
+          eps= 1.397 Vdef-E=   2.672
+          eps= 1.458 Vdef-E=   2.334
+          eps= 1.519 Vdef-E=   2.064
+          eps= 1.580 Vdef-E=   1.853
+           Kcal=   28.8065 Tcal=  9.5287E-26
+  BARR  5 at beta2  1.5920 to  2.9383  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.700 Vdef-E=   2.099
+          eps= 1.834 Vdef-E=   2.238
+          eps= 1.969 Vdef-E=   2.350
+          eps= 2.104 Vdef-E=   2.245
+          eps= 2.238 Vdef-E=   1.962
+          eps= 2.373 Vdef-E=   1.808
+          eps= 2.507 Vdef-E=   1.906
+          eps= 2.642 Vdef-E=   1.652
+          eps= 2.777 Vdef-E=   1.494
+          eps= 2.911 Vdef-E=   1.196
+  2.74   0.000D+00  0.378D-43  0.318D-07  0.000D+00  0.890D-25  0.000D+00  0.378D-43  0.863D+01  0.806D+01  0.288D+02  0.000D+00  0.500D+02
+i=13 E=   2.738 j= 1 T=   3.181E-08
+i=13 E=   2.738 j= 2 T=   8.898E-26
+i=13 E=   2.738 j= 3 T=   3.784E-44
+
+  Excitation Energy :    2.94914389    
+  BARR  1 at beta2  0.3946 to  0.6594  Mom.Int= 0.745D+01 T= 0.336D-06
+          eps= 0.416 Vdef-E=   0.463
+          eps= 0.442 Vdef-E=   0.883
+          eps= 0.469 Vdef-E=   1.174
+          eps= 0.495 Vdef-E=   1.392
+          eps= 0.522 Vdef-E=   1.531
+          eps= 0.548 Vdef-E=   1.361
+          eps= 0.575 Vdef-E=   1.141
+          eps= 0.601 Vdef-E=   0.766
+          eps= 0.628 Vdef-E=   0.350
+          eps= 0.654 Vdef-E=   0.092
+           Kcal=    7.4058 Tcal=  3.6936E-07
+  WELL  2 at beta2  0.6594 to  0.9938  Mom.Int= 0.950D+01
+  BARR  3 at beta2  0.9938 to  1.5920  Mom.Int= 0.273D+02 T= 0.178D-23
+          eps= 1.042 Vdef-E=   0.913
+          eps= 1.101 Vdef-E=   2.242
+          eps= 1.161 Vdef-E=   2.945
+          eps= 1.221 Vdef-E=   3.350
+          eps= 1.281 Vdef-E=   3.252
+          eps= 1.341 Vdef-E=   2.747
+          eps= 1.401 Vdef-E=   2.441
+          eps= 1.460 Vdef-E=   2.117
+          eps= 1.520 Vdef-E=   1.841
+          eps= 1.580 Vdef-E=   1.643
+           Kcal=   27.2199 Tcal=  2.2754E-24
+  BARR  5 at beta2  1.5920 to  2.9356  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.699 Vdef-E=   1.889
+          eps= 1.834 Vdef-E=   2.027
+          eps= 1.968 Vdef-E=   2.138
+          eps= 2.103 Vdef-E=   2.032
+          eps= 2.237 Vdef-E=   1.753
+          eps= 2.371 Vdef-E=   1.598
+          eps= 2.506 Vdef-E=   1.691
+          eps= 2.640 Vdef-E=   1.445
+          eps= 2.774 Vdef-E=   1.285
+          eps= 2.909 Vdef-E=   0.993
+  2.95   0.000D+00  0.378D-43  0.336D-06  0.000D+00  0.178D-23  0.000D+00  0.378D-43  0.745D+01  0.950D+01  0.273D+02  0.000D+00  0.500D+02
+i=14 E=   2.949 j= 1 T=   3.360E-07
+i=14 E=   2.949 j= 2 T=   1.780E-24
+i=14 E=   2.949 j= 3 T=   3.784E-44
+
+  Excitation Energy :    3.15979695    
+  BARR  1 at beta2  0.4040 to  0.6430  Mom.Int= 0.623D+01 T= 0.388D-05
+          eps= 0.423 Vdef-E=   0.407
+          eps= 0.447 Vdef-E=   0.731
+          eps= 0.471 Vdef-E=   0.983
+          eps= 0.495 Vdef-E=   1.178
+          eps= 0.519 Vdef-E=   1.323
+          eps= 0.543 Vdef-E=   1.187
+          eps= 0.566 Vdef-E=   1.002
+          eps= 0.590 Vdef-E=   0.759
+          eps= 0.614 Vdef-E=   0.307
+          eps= 0.638 Vdef-E=   0.043
+           Kcal=    6.1911 Tcal=  4.1930E-06
+  WELL  2 at beta2  0.6430 to  1.0058  Mom.Int= 0.110D+02
+  BARR  3 at beta2  1.0058 to  1.5920  Mom.Int= 0.258D+02 T= 0.367D-22
+          eps= 1.053 Vdef-E=   0.933
+          eps= 1.111 Vdef-E=   2.210
+          eps= 1.170 Vdef-E=   2.835
+          eps= 1.229 Vdef-E=   3.101
+          eps= 1.287 Vdef-E=   3.023
+          eps= 1.346 Vdef-E=   2.518
+          eps= 1.404 Vdef-E=   2.209
+          eps= 1.463 Vdef-E=   1.901
+          eps= 1.522 Vdef-E=   1.618
+          eps= 1.580 Vdef-E=   1.432
+           Kcal=   25.7050 Tcal=  4.7086E-23
+  BARR  5 at beta2  1.5920 to  2.9329  Mom.Int= 0.500D+02 T= 0.378D-43
+          eps= 1.699 Vdef-E=   1.678
+          eps= 1.833 Vdef-E=   1.816
+          eps= 1.967 Vdef-E=   1.926
+          eps= 2.102 Vdef-E=   1.818
+          eps= 2.236 Vdef-E=   1.545
+          eps= 2.370 Vdef-E=   1.388
+          eps= 2.504 Vdef-E=   1.473
+          eps= 2.638 Vdef-E=   1.239
+          eps= 2.772 Vdef-E=   1.076
+          eps= 2.906 Vdef-E=   0.790
+  3.16   0.000D+00  0.378D-43  0.388D-05  0.000D+00  0.367D-22  0.000D+00  0.378D-43  0.623D+01  0.110D+02  0.258D+02  0.000D+00  0.500D+02
+i=15 E=   3.160 j= 1 T=   3.877E-06
+i=15 E=   3.160 j= 2 T=   3.669E-23
+i=15 E=   3.160 j= 3 T=   3.784E-44
+
+  Excitation Energy :    3.37045002    
+  BARR  1 at beta2  0.4139 to  0.6198  Mom.Int= 0.507D+01 T= 0.392D-04
+          eps= 0.430 Vdef-E=   0.312
+          eps= 0.451 Vdef-E=   0.570
+          eps= 0.472 Vdef-E=   0.778
+          eps= 0.492 Vdef-E=   0.951
+          eps= 0.513 Vdef-E=   1.076
+          eps= 0.533 Vdef-E=   1.035
+          eps= 0.554 Vdef-E=   0.902
+          eps= 0.574 Vdef-E=   0.722
+          eps= 0.595 Vdef-E=   0.459
+          eps= 0.616 Vdef-E=   0.070
+           Kcal=    5.0418 Tcal=  4.1760E-05
+  WELL  2 at beta2  0.6198 to  1.0163  Mom.Int= 0.126D+02
+  BARR  3 at beta2  1.0163 to  1.5920  Mom.Int= 0.243D+02 T= 0.778D-21
+          eps= 1.062 Vdef-E=   0.959
+          eps= 1.120 Vdef-E=   2.156
+          eps= 1.178 Vdef-E=   2.671
+          eps= 1.235 Vdef-E=   2.857
+          eps= 1.293 Vdef-E=   2.796
+          eps= 1.350 Vdef-E=   2.292
+          eps= 1.408 Vdef-E=   1.980
+          eps= 1.465 Vdef-E=   1.685
+          eps= 1.523 Vdef-E=   1.397
+          eps= 1.580 Vdef-E=   1.221
+           Kcal=   24.2656 Tcal=  8.3785E-22
+  BARR  5 at beta2  1.5920 to  2.9303  Mom.Int= 0.464D+02 T= 0.510D-40
+          eps= 1.699 Vdef-E=   1.467
+          eps= 1.833 Vdef-E=   1.605
+          eps= 1.967 Vdef-E=   1.714
+          eps= 2.101 Vdef-E=   1.605
+          eps= 2.234 Vdef-E=   1.337
+          eps= 2.368 Vdef-E=   1.178
+          eps= 2.502 Vdef-E=   1.254
+          eps= 2.636 Vdef-E=   1.032
+          eps= 2.770 Vdef-E=   0.868
+          eps= 2.904 Vdef-E=   0.588
+  3.37   0.000D+00  0.510D-40  0.392D-04  0.000D+00  0.778D-21  0.000D+00  0.510D-40  0.507D+01  0.126D+02  0.243D+02  0.000D+00  0.464D+02
+i=16 E=   3.370 j= 1 T=   3.921E-05
+i=16 E=   3.370 j= 2 T=   7.776E-22
+i=16 E=   3.370 j= 3 T=   5.098E-41
+
+  Excitation Energy :    3.58110309    
+  BARR  1 at beta2  0.4238 to  0.6082  Mom.Int= 0.404D+01 T= 0.307D-03
+          eps= 0.439 Vdef-E=   0.204
+          eps= 0.457 Vdef-E=   0.431
+          eps= 0.475 Vdef-E=   0.604
+          eps= 0.494 Vdef-E=   0.751
+          eps= 0.512 Vdef-E=   0.863
+          eps= 0.531 Vdef-E=   0.841
+          eps= 0.549 Vdef-E=   0.723
+          eps= 0.568 Vdef-E=   0.571
+          eps= 0.586 Vdef-E=   0.409
+          eps= 0.605 Vdef-E=   0.070
+           Kcal=    4.0029 Tcal=  3.3339E-04
+  WELL  2 at beta2  0.6082 to  1.0269  Mom.Int= 0.141D+02
+  BARR  3 at beta2  1.0269 to  1.5920  Mom.Int= 0.227D+02 T= 0.179D-19
+          eps= 1.072 Vdef-E=   0.985
+          eps= 1.129 Vdef-E=   2.085
+          eps= 1.185 Vdef-E=   2.507
+          eps= 1.242 Vdef-E=   2.622
+          eps= 1.298 Vdef-E=   2.501
+          eps= 1.355 Vdef-E=   2.066
+          eps= 1.411 Vdef-E=   1.751
+          eps= 1.468 Vdef-E=   1.469
+          eps= 1.524 Vdef-E=   1.176
+          eps= 1.581 Vdef-E=   1.010
+           Kcal=   22.7044 Tcal=  1.9019E-20
+  BARR  5 at beta2  1.5920 to  2.9276  Mom.Int= 0.422D+02 T= 0.215D-36
+          eps= 1.699 Vdef-E=   1.257
+          eps= 1.832 Vdef-E=   1.394
+          eps= 1.966 Vdef-E=   1.502
+          eps= 2.100 Vdef-E=   1.392
+          eps= 2.233 Vdef-E=   1.130
+          eps= 2.367 Vdef-E=   0.968
+          eps= 2.500 Vdef-E=   1.036
+          eps= 2.634 Vdef-E=   0.825
+          eps= 2.767 Vdef-E=   0.664
+          eps= 2.901 Vdef-E=   0.380
+  3.58   0.000D+00  0.215D-36  0.307D-03  0.000D+00  0.179D-19  0.000D+00  0.215D-36  0.404D+01  0.141D+02  0.227D+02  0.000D+00  0.422D+02
+i=17 E=   3.581 j= 1 T=   3.066E-04
+i=17 E=   3.581 j= 2 T=   1.788E-20
+i=17 E=   3.581 j= 3 T=   2.155E-37
+
+  Excitation Energy :    3.79175615    
+  BARR  1 at beta2  0.4391 to  0.5971  Mom.Int= 0.300D+01 T= 0.249D-02
+          eps= 0.452 Vdef-E=   0.158
+          eps= 0.468 Vdef-E=   0.319
+          eps= 0.483 Vdef-E=   0.468
+          eps= 0.499 Vdef-E=   0.572
+          eps= 0.515 Vdef-E=   0.669
+          eps= 0.531 Vdef-E=   0.631
+          eps= 0.547 Vdef-E=   0.530
+          eps= 0.562 Vdef-E=   0.407
+          eps= 0.578 Vdef-E=   0.268
+          eps= 0.594 Vdef-E=   0.060
+           Kcal=    2.9875 Tcal=  2.5351E-03
+  WELL  2 at beta2  0.5971 to  1.0379  Mom.Int= 0.157D+02
+  BARR  3 at beta2  1.0379 to  1.5920  Mom.Int= 0.211D+02 T= 0.441D-18
+          eps= 1.082 Vdef-E=   1.014
+          eps= 1.138 Vdef-E=   1.994
+          eps= 1.193 Vdef-E=   2.389
+          eps= 1.248 Vdef-E=   2.392
+          eps= 1.304 Vdef-E=   2.179
+          eps= 1.359 Vdef-E=   1.839
+          eps= 1.415 Vdef-E=   1.521
+          eps= 1.470 Vdef-E=   1.253
+          eps= 1.526 Vdef-E=   0.954
+          eps= 1.581 Vdef-E=   0.800
+           Kcal=   21.0970 Tcal=  4.7358E-19
+  BARR  5 at beta2  1.5920 to  2.9249  Mom.Int= 0.375D+02 T= 0.263D-32
+          eps= 1.699 Vdef-E=   1.046
+          eps= 1.832 Vdef-E=   1.183
+          eps= 1.965 Vdef-E=   1.290
+          eps= 2.099 Vdef-E=   1.179
+          eps= 2.232 Vdef-E=   0.922
+          eps= 2.365 Vdef-E=   0.758
+          eps= 2.498 Vdef-E=   0.818
+          eps= 2.632 Vdef-E=   0.618
+          eps= 2.765 Vdef-E=   0.459
+          eps= 2.898 Vdef-E=   0.170
+  3.79   0.000D+00  0.263D-32  0.249D-02  0.000D+00  0.441D-18  0.000D+00  0.263D-32  0.300D+01  0.157D+02  0.211D+02  0.000D+00  0.375D+02
+i=18 E=   3.792 j= 1 T=   2.491E-03
+i=18 E=   3.792 j= 2 T=   4.406E-19
+i=18 E=   3.792 j= 3 T=   2.634E-33
+
+  Excitation Energy :    4.00240946    
+  BARR  1 at beta2  0.4559 to  0.5848  Mom.Int= 0.195D+01 T= 0.198D-01
+          eps= 0.466 Vdef-E=   0.097
+          eps= 0.479 Vdef-E=   0.217
+          eps= 0.492 Vdef-E=   0.318
+          eps= 0.505 Vdef-E=   0.397
+          eps= 0.518 Vdef-E=   0.475
+          eps= 0.531 Vdef-E=   0.421
+          eps= 0.544 Vdef-E=   0.338
+          eps= 0.556 Vdef-E=   0.248
+          eps= 0.569 Vdef-E=   0.135
+          eps= 0.582 Vdef-E=   0.023
+           Kcal=    1.9460 Tcal=  1.9996E-02
+  WELL  2 at beta2  0.5848 to  1.0490  Mom.Int= 0.172D+02
+  BARR  3 at beta2  1.0490 to  1.5920  Mom.Int= 0.195D+02 T= 0.122D-16
+          eps= 1.092 Vdef-E=   1.011
+          eps= 1.147 Vdef-E=   1.793
+          eps= 1.201 Vdef-E=   2.263
+          eps= 1.255 Vdef-E=   2.162
+          eps= 1.310 Vdef-E=   1.857
+          eps= 1.364 Vdef-E=   1.612
+          eps= 1.418 Vdef-E=   1.291
+          eps= 1.473 Vdef-E=   1.037
+          eps= 1.527 Vdef-E=   0.732
+          eps= 1.581 Vdef-E=   0.589
+           Kcal=   19.4339 Tcal=  1.3180E-17
+  BARR  5 at beta2  1.5920 to  2.8733  Mom.Int= 0.318D+02 T= 0.221D-27
+          eps= 1.695 Vdef-E=   0.835
+          eps= 1.823 Vdef-E=   0.968
+          eps= 1.951 Vdef-E=   1.063
+          eps= 2.079 Vdef-E=   0.966
+          eps= 2.207 Vdef-E=   0.774
+          eps= 2.335 Vdef-E=   0.647
+          eps= 2.463 Vdef-E=   0.521
+          eps= 2.591 Vdef-E=   0.425
+          eps= 2.720 Vdef-E=   0.301
+          eps= 2.848 Vdef-E=   0.102
+  4.00   0.000D+00  0.221D-27  0.198D-01  0.000D+00  0.122D-16  0.000D+00  0.221D-27  0.195D+01  0.172D+02  0.195D+02  0.000D+00  0.318D+02
+i=19 E=   4.002 j= 1 T=   1.979E-02
+i=19 E=   4.002 j= 2 T=   1.220E-17
+i=19 E=   4.002 j= 3 T=   2.205E-28
+
+  Excitation Energy :    4.21306276    
+  BARR  1 at beta2  0.4784 to  0.5606  Mom.Int= 0.930D+00 T= 0.135D+00
+          eps= 0.485 Vdef-E=   0.062
+          eps= 0.493 Vdef-E=   0.115
+          eps= 0.501 Vdef-E=   0.165
+          eps= 0.510 Vdef-E=   0.215
+          eps= 0.518 Vdef-E=   0.265
+          eps= 0.526 Vdef-E=   0.239
+          eps= 0.534 Vdef-E=   0.186
+          eps= 0.543 Vdef-E=   0.134
+          eps= 0.551 Vdef-E=   0.081
+          eps= 0.559 Vdef-E=   0.014
+           Kcal=    0.9275 Tcal=  1.3528E-01
+  WELL  2 at beta2  0.5606 to  1.0576  Mom.Int= 0.189D+02
+  BARR  3 at beta2  1.0576 to  1.5920  Mom.Int= 0.177D+02 T= 0.409D-15
+          eps= 1.100 Vdef-E=   0.958
+          eps= 1.154 Vdef-E=   1.591
+          eps= 1.207 Vdef-E=   2.074
+          eps= 1.261 Vdef-E=   1.964
+          eps= 1.314 Vdef-E=   1.576
+          eps= 1.368 Vdef-E=   1.381
+          eps= 1.421 Vdef-E=   1.066
+          eps= 1.474 Vdef-E=   0.822
+          eps= 1.528 Vdef-E=   0.513
+          eps= 1.581 Vdef-E=   0.378
+           Kcal=   17.5988 Tcal=  5.1750E-16
+  BARR  5 at beta2  1.5920 to  2.7964  Mom.Int= 0.255D+02 T= 0.718D-22
+          eps= 1.688 Vdef-E=   0.623
+          eps= 1.809 Vdef-E=   0.746
+          eps= 1.929 Vdef-E=   0.855
+          eps= 2.050 Vdef-E=   0.799
+          eps= 2.170 Vdef-E=   0.694
+          eps= 2.291 Vdef-E=   0.350
+          eps= 2.411 Vdef-E=   0.300
+          eps= 2.531 Vdef-E=   0.375
+          eps= 2.652 Vdef-E=   0.167
+          eps= 2.772 Vdef-E=   0.023
+           Kcal=   25.4096 Tcal=  8.5015E-23
+  4.21   0.106D-38  0.718D-22  0.135D+00  0.000D+00  0.409D-15  0.000D+00  0.718D-22  0.930D+00  0.189D+02  0.177D+02  0.000D+00  0.255D+02
+i=20 E=   4.213 j= 1 T=   1.347E-01
+i=20 E=   4.213 j= 2 T=   4.087E-16
+i=20 E=   4.213 j= 3 T=   7.183E-23
+
+  Excitation Energy :    4.42371607    
+  BARR  1 at beta2  0.5089 to  0.5305  Mom.Int= 0.115D+00 T= 0.443D+00
+          eps= 0.511 Vdef-E=   0.011
+          eps= 0.513 Vdef-E=   0.024
+          eps= 0.515 Vdef-E=   0.037
+          eps= 0.517 Vdef-E=   0.050
+          eps= 0.519 Vdef-E=   0.063
+          eps= 0.521 Vdef-E=   0.058
+          eps= 0.524 Vdef-E=   0.044
+          eps= 0.526 Vdef-E=   0.030
+          eps= 0.528 Vdef-E=   0.017
+          eps= 0.530 Vdef-E=   0.003
+           Kcal=    0.1148 Tcal=  4.4284E-01
+  WELL  2 at beta2  0.5305 to  1.0662  Mom.Int= 0.207D+02
+  BARR  3 at beta2  1.0662 to  1.5920  Mom.Int= 0.158D+02 T= 0.192D-13
+          eps= 1.108 Vdef-E=   0.891
+          eps= 1.161 Vdef-E=   1.465
+          eps= 1.213 Vdef-E=   1.884
+          eps= 1.266 Vdef-E=   1.769
+          eps= 1.319 Vdef-E=   1.350
+          eps= 1.371 Vdef-E=   1.147
+          eps= 1.424 Vdef-E=   0.836
+          eps= 1.476 Vdef-E=   0.607
+          eps= 1.529 Vdef-E=   0.293
+          eps= 1.581 Vdef-E=   0.168
+           Kcal=   15.7577 Tcal=  2.0559E-14
+  BARR  5 at beta2  1.5920 to  2.5924  Mom.Int= 0.182D+02 T= 0.155D-15
+          eps= 1.672 Vdef-E=   0.372
+          eps= 1.772 Vdef-E=   0.500
+          eps= 1.872 Vdef-E=   0.603
+          eps= 1.972 Vdef-E=   0.670
+          eps= 2.072 Vdef-E=   0.555
+          eps= 2.172 Vdef-E=   0.476
+          eps= 2.272 Vdef-E=   0.200
+          eps= 2.372 Vdef-E=   0.123
+          eps= 2.472 Vdef-E=   0.106
+          eps= 2.572 Vdef-E=   0.060
+           Kcal=   18.0619 Tcal=  2.0495E-16
+  4.42   0.423D-30  0.154D-15  0.443D+00  0.000D+00  0.192D-13  0.000D+00  0.155D-15  0.115D+00  0.207D+02  0.158D+02  0.000D+00  0.182D+02
+i=21 E=   4.424 j= 1 T=   4.425E-01
+i=21 E=   4.424 j= 2 T=   1.924E-14
+i=21 E=   4.424 j= 3 T=   1.547E-16
+
+  Excitation Energy :    4.63436937    
+  BARR  1  Mom.Int=-0.695D+00 T= 0.801D+00 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.0749  Mom.Int= 0.225D+02
+  BARR  3 at beta2  1.0749 to  1.5490  Mom.Int= 0.134D+02 T= 0.253D-11
+          eps= 1.113 Vdef-E=   0.762
+          eps= 1.160 Vdef-E=   1.246
+          eps= 1.208 Vdef-E=   1.654
+          eps= 1.255 Vdef-E=   1.531
+          eps= 1.302 Vdef-E=   1.364
+          eps= 1.350 Vdef-E=   1.030
+          eps= 1.397 Vdef-E=   0.773
+          eps= 1.445 Vdef-E=   0.483
+          eps= 1.492 Vdef-E=   0.337
+          eps= 1.539 Vdef-E=   0.029
+           Kcal=   13.2855 Tcal=  2.8863E-12
+  WELL  4 at beta2  1.5490 to  1.5960  Mom.Int= 0.261D+00
+  BARR  5 at beta2  1.5960 to  2.2691  Mom.Int= 0.110D+02 T= 0.295D-09
+          eps= 1.650 Vdef-E=   0.104
+          eps= 1.717 Vdef-E=   0.206
+          eps= 1.784 Vdef-E=   0.294
+          eps= 1.852 Vdef-E=   0.353
+          eps= 1.919 Vdef-E=   0.434
+          eps= 1.986 Vdef-E=   0.485
+          eps= 2.054 Vdef-E=   0.371
+          eps= 2.121 Vdef-E=   0.394
+          eps= 2.188 Vdef-E=   0.204
+          eps= 2.256 Vdef-E=   0.030
+           Kcal=   10.8054 Tcal=  4.1168E-10
+  4.63   0.250D-21  0.251D-11  0.801D+00  0.000D+00  0.253D-11  0.000D+00  0.295D-09 -0.695D+00  0.225D+02  0.134D+02  0.261D+00  0.110D+02
+i=22 E=   4.634 j= 1 T=   8.006E-01
+i=22 E=   4.634 j= 2 T=   2.535E-12
+i=22 E=   4.634 j= 3 T=   2.949E-10
+
+  Excitation Energy :    4.84502268    
+  BARR  1  Mom.Int=-0.172D+01 T= 0.969D+00 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.0842  Mom.Int= 0.241D+02
+  BARR  3 at beta2  1.0842 to  1.5137  Mom.Int= 0.113D+02 T= 0.168D-09
+          eps= 1.119 Vdef-E=   0.656
+          eps= 1.161 Vdef-E=   1.051
+          eps= 1.204 Vdef-E=   1.432
+          eps= 1.247 Vdef-E=   1.342
+          eps= 1.290 Vdef-E=   1.328
+          eps= 1.333 Vdef-E=   0.877
+          eps= 1.376 Vdef-E=   0.693
+          eps= 1.419 Vdef-E=   0.444
+          eps= 1.462 Vdef-E=   0.218
+          eps= 1.505 Vdef-E=   0.072
+           Kcal=   11.1271 Tcal=  2.1632E-10
+  WELL  4 at beta2  1.5137 to  1.6146  Mom.Int= 0.127D+01
+  BARR  5 at beta2  1.6146 to  2.1867  Mom.Int= 0.605D+01 T= 0.551D-05
+          eps= 1.660 Vdef-E=  -0.092
+          eps= 1.718 Vdef-E=  -0.003
+          eps= 1.775 Vdef-E=   0.079
+          eps= 1.832 Vdef-E=   0.130
+          eps= 1.889 Vdef-E=   0.212
+          eps= 1.946 Vdef-E=   0.221
+          eps= 2.004 Vdef-E=   0.251
+          eps= 2.061 Vdef-E=   0.150
+          eps= 2.118 Vdef-E=   0.175
+          eps= 2.175 Vdef-E=   0.043
+           Kcal=    5.4499 Tcal=  1.8461E-05
+  4.85   0.435D-15  0.168D-09  0.969D+00  0.000D+00  0.168D-09  0.000D+00  0.551D-05 -0.172D+01  0.241D+02  0.113D+02  0.127D+01  0.605D+01
+i=23 E=   4.845 j= 1 T=   9.687E-01
+i=23 E=   4.845 j= 2 T=   1.682E-10
+i=23 E=   4.845 j= 3 T=   5.509E-06
+
+  Excitation Energy :    5.05567598    
+  BARR  1  Mom.Int=-0.274D+01 T= 0.996D+00 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.0945  Mom.Int= 0.257D+02
+  BARR  3 at beta2  1.0945 to  1.4653  Mom.Int= 0.904D+01 T= 0.140D-07
+          eps= 1.124 Vdef-E=   0.539
+          eps= 1.161 Vdef-E=   0.837
+          eps= 1.198 Vdef-E=   1.187
+          eps= 1.235 Vdef-E=   1.171
+          eps= 1.272 Vdef-E=   1.155
+          eps= 1.310 Vdef-E=   0.805
+          eps= 1.347 Vdef-E=   0.620
+          eps= 1.384 Vdef-E=   0.434
+          eps= 1.421 Vdef-E=   0.224
+          eps= 1.458 Vdef-E=   0.017
+           Kcal=    9.0013 Tcal=  1.5190E-08
+  WELL  4 at beta2  1.4653 to  1.8869  Mom.Int= 0.548D+01
+  BARR  5 at beta2  1.8869 to  2.0252  Mom.Int= 0.584D+00 T= 0.237D+00
+          eps= 1.898 Vdef-E=   0.004
+          eps= 1.912 Vdef-E=   0.010
+          eps= 1.926 Vdef-E=   0.013
+          eps= 1.939 Vdef-E=   0.011
+          eps= 1.953 Vdef-E=   0.009
+          eps= 1.967 Vdef-E=   0.029
+          eps= 1.981 Vdef-E=   0.054
+          eps= 1.995 Vdef-E=   0.057
+          eps= 2.009 Vdef-E=   0.031
+          eps= 2.022 Vdef-E=   0.005
+           Kcal=    0.5827 Tcal=  2.3770E-01
+  5.06   0.187D-08  0.140D-07  0.996D+00  0.000D+00  0.140D-07  0.000D+00  0.237D+00 -0.274D+01  0.257D+02  0.904D+01  0.548D+01  0.584D+00
+i=24 E=   5.056 j= 1 T=   9.958E-01
+i=24 E=   5.056 j= 2 T=   1.397E-08
+i=24 E=   5.056 j= 3 T=   2.373E-01
+
+  Excitation Energy :    5.26632929    
+  BARR  1  Mom.Int=-0.376D+01 T= 0.999D+00 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.1056  Mom.Int= 0.272D+02
+  BARR  3 at beta2  1.1056 to  1.4228  Mom.Int= 0.718D+01 T= 0.585D-06
+          eps= 1.131 Vdef-E=   0.438
+          eps= 1.163 Vdef-E=   0.645
+          eps= 1.194 Vdef-E=   0.931
+          eps= 1.226 Vdef-E=   1.007
+          eps= 1.258 Vdef-E=   0.902
+          eps= 1.290 Vdef-E=   0.909
+          eps= 1.321 Vdef-E=   0.498
+          eps= 1.353 Vdef-E=   0.386
+          eps= 1.385 Vdef-E=   0.217
+          eps= 1.416 Vdef-E=   0.037
+           Kcal=    7.1398 Tcal=  6.2869E-07
+  WELL  4 at beta2  1.4228 to  1.9890  Mom.Int= 0.101D+02
+  BARR  5  Mom.Int=-0.236D+01 T= 0.991D+00 (Hill-Wheeler)
+  5.27   0.574D-06  0.585D-06  0.999D+00  0.000D+00  0.585D-06  0.000D+00  0.991D+00 -0.376D+01  0.272D+02  0.718D+01  0.101D+02 -0.236D+01
+i=25 E=   5.266 j= 1 T=   9.995E-01
+i=25 E=   5.266 j= 2 T=   5.848E-07
+i=25 E=   5.266 j= 3 T=   9.912E-01
+
+  Excitation Energy :    5.47698259    
+  BARR  1  Mom.Int=-0.478D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.1172  Mom.Int= 0.286D+02
+  BARR  3 at beta2  1.1172 to  1.3857  Mom.Int= 0.542D+01 T= 0.197D-04
+          eps= 1.139 Vdef-E=   0.310
+          eps= 1.166 Vdef-E=   0.470
+          eps= 1.192 Vdef-E=   0.696
+          eps= 1.219 Vdef-E=   0.831
+          eps= 1.246 Vdef-E=   0.714
+          eps= 1.273 Vdef-E=   0.735
+          eps= 1.300 Vdef-E=   0.573
+          eps= 1.327 Vdef-E=   0.268
+          eps= 1.353 Vdef-E=   0.174
+          eps= 1.380 Vdef-E=   0.035
+           Kcal=    5.3857 Tcal=  2.0990E-05
+  WELL  4 at beta2  1.3857 to  1.9890  Mom.Int= 0.133D+02
+  BARR  5  Mom.Int=-0.586D+01 T= 0.100D+01 (Hill-Wheeler)
+  5.48   0.196D-04  0.197D-04  0.100D+01  0.000D+00  0.197D-04  0.000D+00  0.100D+01 -0.478D+01  0.286D+02  0.542D+01  0.133D+02 -0.586D+01
+i=26 E=   5.477 j= 1 T=   9.999E-01
+i=26 E=   5.477 j= 2 T=   1.965E-05
+i=26 E=   5.477 j= 3 T=   1.000E+00
+
+  Excitation Energy :    5.68763590    
+  BARR  1  Mom.Int=-0.580D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.1300  Mom.Int= 0.301D+02
+  BARR  3 at beta2  1.1300 to  1.3431  Mom.Int= 0.368D+01 T= 0.633D-03
+          eps= 1.147 Vdef-E=   0.108
+          eps= 1.168 Vdef-E=   0.293
+          eps= 1.190 Vdef-E=   0.454
+          eps= 1.211 Vdef-E=   0.612
+          eps= 1.232 Vdef-E=   0.555
+          eps= 1.254 Vdef-E=   0.482
+          eps= 1.275 Vdef-E=   0.531
+          eps= 1.296 Vdef-E=   0.431
+          eps= 1.318 Vdef-E=   0.090
+          eps= 1.339 Vdef-E=   0.015
+           Kcal=    3.6440 Tcal=  6.8329E-04
+  WELL  4 at beta2  1.3431 to  1.9890  Mom.Int= 0.163D+02
+  BARR  5  Mom.Int=-0.935D+01 T= 0.100D+01 (Hill-Wheeler)
+  5.69   0.633D-03  0.632D-03  0.100D+01  0.000D+00  0.633D-03  0.000D+00  0.100D+01 -0.580D+01  0.301D+02  0.368D+01  0.163D+02 -0.935D+01
+i=27 E=   5.688 j= 1 T=   1.000E+00
+i=27 E=   5.688 j= 2 T=   6.330E-04
+i=27 E=   5.688 j= 3 T=   1.000E+00
+
+  Excitation Energy :    5.89828920    
+  BARR  1  Mom.Int=-0.683D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.1616  Mom.Int= 0.318D+02
+  BARR  3 at beta2  1.1616 to  1.3076  Mom.Int= 0.227D+01 T= 0.106D-01
+          eps= 1.173 Vdef-E=   0.117
+          eps= 1.188 Vdef-E=   0.223
+          eps= 1.202 Vdef-E=   0.372
+          eps= 1.217 Vdef-E=   0.421
+          eps= 1.232 Vdef-E=   0.347
+          eps= 1.246 Vdef-E=   0.292
+          eps= 1.261 Vdef-E=   0.279
+          eps= 1.275 Vdef-E=   0.319
+          eps= 1.290 Vdef-E=   0.275
+          eps= 1.305 Vdef-E=   0.057
+           Kcal=    2.2511 Tcal=  1.0963E-02
+  WELL  4 at beta2  1.3076 to  1.9890  Mom.Int= 0.192D+02
+  BARR  5  Mom.Int=-0.128D+02 T= 0.100D+01 (Hill-Wheeler)
+  5.90   0.106D-01  0.104D-01  0.100D+01  0.000D+00  0.106D-01  0.000D+00  0.100D+01 -0.683D+01  0.318D+02  0.227D+01  0.192D+02 -0.128D+02
+i=28 E=   5.898 j= 1 T=   1.000E+00
+i=28 E=   5.898 j= 2 T=   1.057E-02
+i=28 E=   5.898 j= 3 T=   1.000E+00
+
+  Excitation Energy :    6.10894251    
+  BARR  1  Mom.Int=-0.785D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.1869  Mom.Int= 0.335D+02
+  BARR  3 at beta2  1.1869 to  1.2967  Mom.Int= 0.109D+01 T= 0.102D+00
+          eps= 1.196 Vdef-E=   0.103
+          eps= 1.207 Vdef-E=   0.176
+          eps= 1.218 Vdef-E=   0.207
+          eps= 1.229 Vdef-E=   0.152
+          eps= 1.240 Vdef-E=   0.100
+          eps= 1.251 Vdef-E=   0.069
+          eps= 1.262 Vdef-E=   0.070
+          eps= 1.273 Vdef-E=   0.102
+          eps= 1.284 Vdef-E=   0.084
+          eps= 1.295 Vdef-E=   0.043
+           Kcal=    1.0823 Tcal=  1.0297E-01
+  WELL  4 at beta2  1.2967 to  1.9890  Mom.Int= 0.217D+02
+  BARR  5  Mom.Int=-0.163D+02 T= 0.100D+01 (Hill-Wheeler)
+  6.11   0.102D+00  0.848D-01  0.100D+01  0.000D+00  0.102D+00  0.000D+00  0.100D+01 -0.785D+01  0.335D+02  0.109D+01  0.217D+02 -0.163D+02
+i=29 E=   6.109 j= 1 T=   1.000E+00
+i=29 E=   6.109 j= 2 T=   1.021E-01
+i=29 E=   6.109 j= 3 T=   1.000E+00
+
+  Excitation Energy :    6.31959581    
+  BARR  1  Mom.Int=-0.887D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.353D+02
+  BARR  3  Mom.Int=-0.288D-05 T= 0.500D+00 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.247D+02
+  BARR  5  Mom.Int=-0.198D+02 T= 0.100D+01 (Hill-Wheeler)
+  6.32   0.500D+00  0.250D+00  0.100D+01  0.000D+00  0.500D+00  0.000D+00  0.100D+01 -0.887D+01  0.353D+02 -0.288D-05  0.247D+02 -0.198D+02
+i=30 E=   6.320 j= 1 T=   1.000E+00
+i=30 E=   6.320 j= 2 T=   5.000E-01
+i=30 E=   6.320 j= 3 T=   1.000E+00
+
+  Excitation Energy :    6.51959562    
+  BARR  1  Mom.Int=-0.984D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.369D+02
+  BARR  3  Mom.Int=-0.121D+01 T= 0.918D+00 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.272D+02
+  BARR  5  Mom.Int=-0.231D+02 T= 0.100D+01 (Hill-Wheeler)
+  6.52   0.918D+00  0.324D+00  0.100D+01  0.000D+00  0.918D+00  0.000D+00  0.100D+01 -0.984D+01  0.369D+02 -0.121D+01  0.272D+02 -0.231D+02
+i=31 E=   6.520 j= 1 T=   1.000E+00
+i=31 E=   6.520 j= 2 T=   9.179E-01
+i=31 E=   6.520 j= 3 T=   1.000E+00
+
+  Excitation Energy :    6.71959543    
+  BARR  1  Mom.Int=-0.108D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.383D+02
+  BARR  3  Mom.Int=-0.241D+01 T= 0.992D+00 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.293D+02
+  BARR  5  Mom.Int=-0.265D+02 T= 0.100D+01 (Hill-Wheeler)
+  6.72   0.992D+00  0.332D+00  0.100D+01  0.000D+00  0.992D+00  0.000D+00  0.100D+01 -0.108D+02  0.383D+02 -0.241D+01  0.293D+02 -0.265D+02
+i=32 E=   6.720 j= 1 T=   1.000E+00
+i=32 E=   6.720 j= 2 T=   9.921E-01
+i=32 E=   6.720 j= 3 T=   1.000E+00
+
+  Excitation Energy :    6.91959524    
+  BARR  1  Mom.Int=-0.118D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.396D+02
+  BARR  3  Mom.Int=-0.362D+01 T= 0.999D+00 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.312D+02
+  BARR  5  Mom.Int=-0.298D+02 T= 0.100D+01 (Hill-Wheeler)
+  6.92   0.999D+00  0.333D+00  0.100D+01  0.000D+00  0.999D+00  0.000D+00  0.100D+01 -0.118D+02  0.396D+02 -0.362D+01  0.312D+02 -0.298D+02
+i=33 E=   6.920 j= 1 T=   1.000E+00
+i=33 E=   6.920 j= 2 T=   9.993E-01
+i=33 E=   6.920 j= 3 T=   1.000E+00
+
+  Excitation Energy :    7.11959505    
+  BARR  1  Mom.Int=-0.128D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.408D+02
+  BARR  3  Mom.Int=-0.483D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.331D+02
+  BARR  5  Mom.Int=-0.331D+02 T= 0.100D+01 (Hill-Wheeler)
+  7.12   0.100D+01  0.333D+00  0.100D+01  0.000D+00  0.100D+01  0.000D+00  0.100D+01 -0.128D+02  0.408D+02 -0.483D+01  0.331D+02 -0.331D+02
+i=34 E=   7.120 j= 1 T=   1.000E+00
+i=34 E=   7.120 j= 2 T=   9.999E-01
+i=34 E=   7.120 j= 3 T=   1.000E+00
+
+  Excitation Energy :    7.31959486    
+  BARR  1  Mom.Int=-0.137D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.420D+02
+  BARR  3  Mom.Int=-0.604D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.348D+02
+  BARR  5  Mom.Int=-0.364D+02 T= 0.100D+01 (Hill-Wheeler)
+  7.32   0.100D+01  0.333D+00  0.100D+01  0.000D+00  0.100D+01  0.000D+00  0.100D+01 -0.137D+02  0.420D+02 -0.604D+01  0.348D+02 -0.364D+02
+i=35 E=   7.320 j= 1 T=   1.000E+00
+i=35 E=   7.320 j= 2 T=   1.000E+00
+i=35 E=   7.320 j= 3 T=   1.000E+00
+
+  Excitation Energy :    7.51959467    
+  BARR  1  Mom.Int=-0.147D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.432D+02
+  BARR  3  Mom.Int=-0.724D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.364D+02
+  BARR  5  Mom.Int=-0.397D+02 T= 0.100D+01 (Hill-Wheeler)
+  7.52   0.100D+01  0.333D+00  0.100D+01  0.000D+00  0.100D+01  0.000D+00  0.100D+01 -0.147D+02  0.432D+02 -0.724D+01  0.364D+02 -0.397D+02
+i=36 E=   7.520 j= 1 T=   1.000E+00
+i=36 E=   7.520 j= 2 T=   1.000E+00
+i=36 E=   7.520 j= 3 T=   1.000E+00
+
+  Excitation Energy :    7.71959448    
+  BARR  1  Mom.Int=-0.157D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.443D+02
+  BARR  3  Mom.Int=-0.845D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.379D+02
+  BARR  5  Mom.Int=-0.431D+02 T= 0.100D+01 (Hill-Wheeler)
+  7.72   0.100D+01  0.333D+00  0.100D+01  0.000D+00  0.100D+01  0.000D+00  0.100D+01 -0.157D+02  0.443D+02 -0.845D+01  0.379D+02 -0.431D+02
+i=37 E=   7.720 j= 1 T=   1.000E+00
+i=37 E=   7.720 j= 2 T=   1.000E+00
+i=37 E=   7.720 j= 3 T=   1.000E+00
+
+  Excitation Energy :    7.91959429    
+  BARR  1  Mom.Int=-0.166D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.453D+02
+  BARR  3  Mom.Int=-0.966D+01 T= 0.100D+01 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.394D+02
+  BARR  5  Mom.Int=-0.464D+02 T= 0.100D+01 (Hill-Wheeler)
+  7.92   0.100D+01  0.333D+00  0.100D+01  0.000D+00  0.100D+01  0.000D+00  0.100D+01 -0.166D+02  0.453D+02 -0.966D+01  0.394D+02 -0.464D+02
+i=38 E=   7.920 j= 1 T=   1.000E+00
+i=38 E=   7.920 j= 2 T=   1.000E+00
+i=38 E=   7.920 j= 3 T=   1.000E+00
+
+  Excitation Energy :    8.11959457    
+  BARR  1  Mom.Int=-0.176D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.464D+02
+  BARR  3  Mom.Int=-0.109D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.408D+02
+  BARR  5  Mom.Int=-0.497D+02 T= 0.100D+01 (Hill-Wheeler)
+  8.12   0.100D+01  0.333D+00  0.100D+01  0.000D+00  0.100D+01  0.000D+00  0.100D+01 -0.176D+02  0.464D+02 -0.109D+02  0.408D+02 -0.497D+02
+i=39 E=   8.120 j= 1 T=   1.000E+00
+i=39 E=   8.120 j= 2 T=   1.000E+00
+i=39 E=   8.120 j= 3 T=   1.000E+00
+
+  Excitation Energy :    8.31959438    
+  BARR  1  Mom.Int=-0.186D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  2 at beta2  0.5200 to  1.2170  Mom.Int= 0.474D+02
+  BARR  3  Mom.Int=-0.121D+02 T= 0.100D+01 (Hill-Wheeler)
+  WELL  4 at beta2  1.2170 to  1.9890  Mom.Int= 0.422D+02
+  BARR  5  Mom.Int=-0.530D+02 T= 0.100D+01 (Hill-Wheeler)
+  8.32   0.100D+01  0.333D+00  0.100D+01  0.000D+00  0.100D+01  0.000D+00  0.100D+01 -0.186D+02  0.474D+02 -0.121D+02  0.422D+02 -0.530D+02
+i=40 E=   8.320 j= 1 T=   1.000E+00
+i=40 E=   8.320 j= 2 T=   1.000E+00
+i=40 E=   8.320 j= 3 T=   1.000E+00

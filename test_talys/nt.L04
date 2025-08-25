@@ -1,0 +1,33 @@
+# header:
+#   title: Pa233(n,t_4) cross section
+#   source: TALYS-2.0
+#   user: Arjan Koning
+#   date: 2025-08-25
+#   format: YANDF-0.1
+# target:
+#   Z: 91
+#   A: 233
+#   nuclide: Pa233
+# reaction:
+#   type: (n,t_4)
+#   Q-value [MeV]: -3.390591E+00
+#   E-threshold [MeV]:  3.405266E+00
+#   ENDF_MF: 3
+#   ENDF_MT: 704
+#   level: 
+#     number: 4
+#     energy [MeV]:  1.857180E-01
+#     spin:  2.500000E+00
+#     parity: -1
+# datablock:
+#   quantity: cross section
+#   columns: 4
+#   entries: 6
+##       E             xs           Direct        Compound
+##     [MeV]          [mb]           [mb]           [mb]
+   1.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.200000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.400000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.600000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   1.800000E+00   0.000000E+00   0.000000E+00   0.000000E+00
+   2.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00
