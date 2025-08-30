@@ -78,6 +78,77 @@ class TalysInterface(LoggerMixin):
         except Exception as e:
             self.logger.error(f"验证TALYS可执行文件时出错: {e}")
             return False
+
+    def validate_parameters(self, parameters: Dict[str, Any]) -> tuple[bool, str]:
+        """
+        验证计算参数
+
+        Args:
+            parameters: 参数字典
+
+        Returns:
+            tuple: (是否有效, 错误信息)
+        """
+        try:
+            # 检查基础必需参数
+            basic_required_params = ['projectile', 'element', 'mass']
+            for param in basic_required_params:
+                if param not in parameters:
+                    return False, f"缺少必需参数: {param}"
+                if parameters[param] is None or parameters[param] == '':
+                    return False, f"参数 {param} 不能为空"
+
+            # 验证入射粒子
+            valid_projectiles = ['n', 'p', 'd', 't', 'h', 'a', 'g']
+            if parameters['projectile'] not in valid_projectiles:
+                return False, f"无效的入射粒子: {parameters['projectile']}"
+
+            # 验证原子序数和质量数
+            try:
+                mass = int(parameters['mass'])
+                if mass < 1 or mass > 300:
+                    return False, "质量数必须在1-300之间"
+            except (ValueError, TypeError):
+                return False, "质量数必须是整数"
+
+            # 验证能量
+            if 'energy' in parameters:
+                # 单一能量模式
+                try:
+                    energy = float(parameters['energy'])
+                    if energy <= 0 or energy > 1000:
+                        return False, "能量必须在0-1000 MeV之间"
+                except (ValueError, TypeError):
+                    return False, "能量必须是数字"
+            elif 'energy_mode' in parameters and parameters['energy_mode'] == 'range':
+                # 能量范围模式
+                try:
+                    energy_min = float(parameters.get('energy_min', 0))
+                    energy_max = float(parameters.get('energy_max', 0))
+                    energy_step = float(parameters.get('energy_step', 1))
+
+                    if energy_min <= 0 or energy_min > 1000:
+                        return False, "最小能量必须在0-1000 MeV之间"
+                    if energy_max <= 0 or energy_max > 1000:
+                        return False, "最大能量必须在0-1000 MeV之间"
+                    if energy_min >= energy_max:
+                        return False, "最小能量必须小于最大能量"
+                    if energy_step <= 0 or energy_step > (energy_max - energy_min):
+                        return False, "能量步长必须大于0且小于能量范围"
+                except (ValueError, TypeError):
+                    return False, "能量参数必须是数字"
+            else:
+                return False, "缺少能量参数"
+
+            # 验证元素符号
+            element = parameters['element']
+            if not element or not element.isalpha():
+                return False, "元素符号必须是字母"
+
+            return True, "参数验证通过"
+
+        except Exception as e:
+            return False, f"参数验证出错: {e}"
     
     def create_temp_directory(self) -> Path:
         """
@@ -127,19 +198,30 @@ class TalysInterface(LoggerMixin):
                 
                 # 必需参数
                 f.write("# Required parameters\n")
-                required_params = ['projectile', 'element', 'mass', 'energy']
-                for param in required_params:
+                basic_required_params = ['projectile', 'element', 'mass']
+                for param in basic_required_params:
                     if param in parameters:
                         f.write(f"{param} {parameters[param]}\n")
                     else:
                         raise ValueError(f"缺少必需参数: {param}")
+
+                # 能量参数处理
+                if 'energy' in parameters:
+                    # 单一能量模式
+                    f.write(f"energy {parameters['energy']}\n")
+                elif 'energy_mode' in parameters and parameters['energy_mode'] == 'range':
+                    # 能量范围模式
+                    f.write(f"energy {parameters['energy_min']} {parameters['energy_max']} {parameters['energy_step']}\n")
+                else:
+                    raise ValueError("缺少能量参数")
                 
                 f.write("\n")
                 
                 # 可选参数
                 f.write("# Optional parameters\n")
+                excluded_params = ['projectile', 'element', 'mass', 'energy', 'energy_min', 'energy_max', 'energy_step', 'energy_mode']
                 for key, value in parameters.items():
-                    if key not in required_params:
+                    if key not in excluded_params:
                         # 处理布尔值
                         if isinstance(value, bool):
                             value = 'y' if value else 'n'
@@ -259,11 +341,38 @@ class TalysInterface(LoggerMixin):
                 energy = file.stem
                 results['angular'][energy] = self._parse_angular_file(file)
             self.logger.debug(f"解析{len(angular_files)}个角分布文件完成")
-        
+
+        # 解析残余核产生文件
+        residual_files = list(self.temp_dir.glob("rp*.tot"))
+        if residual_files:
+            results['residual_production'] = {}
+            for file in residual_files:
+                nucleus = file.stem
+                results['residual_production'][nucleus] = self._parse_cross_section_file(file)
+            self.logger.debug(f"解析{len(residual_files)}个残余核产生文件完成")
+
+        # 解析反应道截面文件
+        channel_files = list(self.temp_dir.glob("*.L*"))
+        if channel_files:
+            results['reaction_channels'] = {}
+            for file in channel_files:
+                channel = file.name
+                results['reaction_channels'][channel] = self._parse_cross_section_file(file)
+            self.logger.debug(f"解析{len(channel_files)}个反应道文件完成")
+
+        # 解析gamma射线产生文件
+        gamma_files = list(self.temp_dir.glob("*.gam"))
+        if gamma_files:
+            results['gamma_production'] = {}
+            for file in gamma_files:
+                transition = file.stem
+                results['gamma_production'][transition] = self._parse_spectrum_file(file)
+            self.logger.debug(f"解析{len(gamma_files)}个gamma产生文件完成")
+
         # 列出所有输出文件
         output_files = list(self.temp_dir.glob("*"))
         results['output_files'] = [f.name for f in output_files if f.is_file()]
-        
+
         self.logger.info(f"解析完成，共找到{len(results['output_files'])}个输出文件")
         return results
     
@@ -308,13 +417,77 @@ class TalysInterface(LoggerMixin):
     
     def _parse_spectrum_file(self, file_path: Path) -> Dict[str, List[float]]:
         """解析能谱文件"""
-        # TODO: 实现能谱文件解析
-        return {'energy': [], 'intensity': []}
-    
+        try:
+            energies = []
+            intensities = []
+
+            with open(file_path, 'r') as f:
+                lines = f.readlines()
+
+            # 跳过注释行和头部信息
+            data_started = False
+            for line in lines:
+                line = line.strip()
+                if not line or line.startswith('#'):
+                    continue
+
+                # 检查是否是数据行（通常包含两列数字）
+                parts = line.split()
+                if len(parts) >= 2:
+                    try:
+                        energy = float(parts[0])
+                        intensity = float(parts[1])
+                        energies.append(energy)
+                        intensities.append(intensity)
+                        data_started = True
+                    except ValueError:
+                        if data_started:
+                            break  # 数据部分结束
+                        continue
+
+            self.logger.debug(f"解析能谱文件 {file_path.name}: {len(energies)} 个数据点")
+            return {'energy': energies, 'intensity': intensities}
+
+        except Exception as e:
+            self.logger.error(f"解析能谱文件失败 {file_path}: {e}")
+            return {'energy': [], 'intensity': []}
+
     def _parse_angular_file(self, file_path: Path) -> Dict[str, List[float]]:
         """解析角分布文件"""
-        # TODO: 实现角分布文件解析
-        return {'angle': [], 'cross_section': []}
+        try:
+            angles = []
+            cross_sections = []
+
+            with open(file_path, 'r') as f:
+                lines = f.readlines()
+
+            # 跳过注释行和头部信息
+            data_started = False
+            for line in lines:
+                line = line.strip()
+                if not line or line.startswith('#'):
+                    continue
+
+                # 检查是否是数据行
+                parts = line.split()
+                if len(parts) >= 2:
+                    try:
+                        angle = float(parts[0])
+                        cross_section = float(parts[1])
+                        angles.append(angle)
+                        cross_sections.append(cross_section)
+                        data_started = True
+                    except ValueError:
+                        if data_started:
+                            break
+                        continue
+
+            self.logger.debug(f"解析角分布文件 {file_path.name}: {len(angles)} 个数据点")
+            return {'angle': angles, 'cross_section': cross_sections}
+
+        except Exception as e:
+            self.logger.error(f"解析角分布文件失败 {file_path}: {e}")
+            return {'angle': [], 'cross_section': []}
     
     def stop_calculation(self):
         """停止当前计算"""

@@ -95,7 +95,7 @@ class TabbedMainWindow(QMainWindow, LoggerMixin):
         self.tab_widget.addTab(self.visualization_tab, "📊 可视化")
         
         # 专家模式标签页
-        self.expert_tab = ExpertModeTab()
+        self.expert_tab = ExpertModeTab(self.parameter_sync)
         self.tab_widget.addTab(self.expert_tab, "🔧 专家模式")
         
         # 设置标签页工具提示

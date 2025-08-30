@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
 
 from .base_tab import BaseParameterTab
 from utils.i18n import tr
+from core.talys_interface import TalysInterface, TalysCalculationError, TalysInterfaceError
 
 class BasicParametersTab(BaseParameterTab):
     """基础参数标签页"""
@@ -80,19 +81,21 @@ class BasicParametersTab(BaseParameterTab):
         
     def create_target_group(self, parent_layout):
         """创建目标核参数组"""
-        group, _ = self.create_group_box(tr('group_target'))
-        layout = self.create_form_layout()
+        group, group_layout = self.create_group_box(tr('group_target'))
+
+        # 创建表单布局
+        form_layout = self.create_form_layout()
 
         # 原子序数
         self.z_spinbox = self.create_spin_box(1, 118, 1, tr('tooltip_atomic_number'))
         self.z_label = QLabel(tr('label_atomic_number'))
-        layout.addRow(self.z_label, self.z_spinbox)
+        form_layout.addRow(self.z_label, self.z_spinbox)
         self.widgets['z'] = self.z_spinbox
 
         # 质量数
         self.a_spinbox = self.create_spin_box(1, 300, 1, tr('tooltip_mass_number'))
         self.a_label = QLabel(tr('label_mass_number'))
-        layout.addRow(self.a_label, self.a_spinbox)
+        form_layout.addRow(self.a_label, self.a_spinbox)
         self.widgets['mass'] = self.a_spinbox
 
         # 元素符号（自动更新）
@@ -109,7 +112,7 @@ class BasicParametersTab(BaseParameterTab):
             }
         """)
         self.element_row_label = QLabel(tr('label_element'))
-        layout.addRow(self.element_row_label, self.element_label)
+        form_layout.addRow(self.element_row_label, self.element_label)
 
         # 核素表示
         self.nuclide_label = QLabel("¹H")
@@ -122,15 +125,18 @@ class BasicParametersTab(BaseParameterTab):
             }
         """)
         self.nuclide_row_label = QLabel(tr('label_nuclide'))
-        layout.addRow(self.nuclide_row_label, self.nuclide_label)
-        
-        group.setLayout(layout)
+        form_layout.addRow(self.nuclide_row_label, self.nuclide_label)
+
+        # 将表单布局添加到组布局中
+        group_layout.addLayout(form_layout)
         parent_layout.addWidget(group)
 
     def create_projectile_group(self, parent_layout):
         """创建入射粒子参数组"""
-        group, _ = self.create_group_box(tr('group_projectile'))
-        layout = self.create_form_layout()
+        group, group_layout = self.create_group_box(tr('group_projectile'))
+
+        # 创建表单布局
+        form_layout = self.create_form_layout()
 
         # 粒子类型
         self.projectiles_data = [
@@ -145,7 +151,7 @@ class BasicParametersTab(BaseParameterTab):
 
         self.projectile_combo = self.create_combo_box(self.projectiles_data, tr('tooltip_particle_type', "选择入射粒子类型"))
         self.projectile_label = QLabel(tr('label_particle_type'))
-        layout.addRow(self.projectile_label, self.projectile_combo)
+        form_layout.addRow(self.projectile_label, self.projectile_combo)
         self.widgets['projectile'] = self.projectile_combo
 
         # 粒子信息显示
@@ -158,26 +164,28 @@ class BasicParametersTab(BaseParameterTab):
                 padding: 4px;
             }
         """)
-        layout.addRow("", self.projectile_info)
-        
-        group.setLayout(layout)
+        form_layout.addRow("", self.projectile_info)
+
+        # 将表单布局添加到组布局中
+        group_layout.addLayout(form_layout)
         parent_layout.addWidget(group)
 
     def create_energy_group(self, parent_layout):
         """创建能量参数组"""
-        group, layout = self.create_group_box(tr('group_energy'))
+        group, group_layout = self.create_group_box(tr('group_energy'))
 
 
         # 能量模式选择
         mode_layout = QHBoxLayout()
         self.single_energy_radio = self.create_radio_button(tr('radio_single_energy'), True, tr('tooltip_single_energy'))
         self.energy_range_radio = self.create_radio_button(tr('radio_energy_range'), False, tr('tooltip_energy_range'))
-        self.energy_range_radio.setEnabled(False)  # 暂时禁用
+        # 启用能量范围功能
+        self.energy_range_radio.setEnabled(True)
 
         mode_layout.addWidget(self.single_energy_radio)
         mode_layout.addWidget(self.energy_range_radio)
         mode_layout.addStretch()
-        layout.addLayout(mode_layout)
+        group_layout.addLayout(mode_layout)
 
         # 单一能量输入
         single_layout = QHBoxLayout()
@@ -192,11 +200,11 @@ class BasicParametersTab(BaseParameterTab):
         self.widgets['energy'] = self.single_energy_spinbox
 
         single_layout.addStretch()
-        layout.addLayout(single_layout)
+        group_layout.addLayout(single_layout)
         
-        # 能量范围输入（暂时隐藏）
-        range_widget = QWidget()
-        range_layout = QHBoxLayout(range_widget)
+        # 能量范围输入
+        self.range_widget = QWidget()
+        range_layout = QHBoxLayout(self.range_widget)
         self.energy_min_label = QLabel(tr('label_min'))
         range_layout.addWidget(self.energy_min_label)
 
@@ -204,7 +212,6 @@ class BasicParametersTab(BaseParameterTab):
             0.001, 200.0, 1.0, 3, tr('tooltip_min_energy')
         )
         self.energy_min_spinbox.setSuffix(" MeV")
-        self.energy_min_spinbox.setEnabled(False)
         range_layout.addWidget(self.energy_min_spinbox)
 
         self.energy_max_label = QLabel(tr('label_max'))
@@ -214,33 +221,29 @@ class BasicParametersTab(BaseParameterTab):
             0.001, 200.0, 20.0, 3, tr('tooltip_max_energy')
         )
         self.energy_max_spinbox.setSuffix(" MeV")
-        self.energy_max_spinbox.setEnabled(False)
         range_layout.addWidget(self.energy_max_spinbox)
 
+        # 能量步长
+        self.energy_step_label = QLabel(tr('label_step', "步长:"))
+        range_layout.addWidget(self.energy_step_label)
+
+        self.energy_step_spinbox = self.create_double_spin_box(
+            0.001, 10.0, 1.0, 3, tr('tooltip_energy_step', "能量步长 (MeV)")
+        )
+        self.energy_step_spinbox.setSuffix(" MeV")
+        range_layout.addWidget(self.energy_step_spinbox)
+
         range_layout.addStretch()
-        layout.addWidget(range_widget)
-        range_widget.setVisible(False)  # 暂时隐藏
+        group_layout.addWidget(self.range_widget)
+
+        # 默认隐藏能量范围输入
+        self.range_widget.setVisible(False)
 
         parent_layout.addWidget(group)
 
     def create_calculation_group(self, parent_layout):
-        """创建计算控制组"""
-        group, layout = self.create_group_box(tr('group_calculation'))
-
-
-        # 快速计算按钮
-        button_layout = QHBoxLayout()
-
-        self.run_button = self.create_push_button(tr('button_run_calculation'), True, tr('tooltip_run_calculation'))
-        self.run_button.clicked.connect(self.on_run_calculation)
-        button_layout.addWidget(self.run_button)
-
-        self.validate_button = self.create_push_button(tr('button_validate'), False, tr('tooltip_validate'))
-        self.validate_button.clicked.connect(self.on_validate_parameters)
-        button_layout.addWidget(self.validate_button)
-
-        button_layout.addStretch()
-        layout.addLayout(button_layout)
+        """创建参数摘要组"""
+        group, group_layout = self.create_group_box(tr('label_parameter_summary'))
 
         # 参数摘要
         self.summary_label = QLabel()
@@ -255,9 +258,7 @@ class BasicParametersTab(BaseParameterTab):
                 font-size: 11px;
             }
         """)
-        self.summary_title_label = QLabel(tr('label_parameter_summary'))
-        layout.addWidget(self.summary_title_label)
-        layout.addWidget(self.summary_label)
+        group_layout.addWidget(self.summary_label)
 
         parent_layout.addWidget(group)
         
@@ -278,6 +279,9 @@ class BasicParametersTab(BaseParameterTab):
         self.a_spinbox.valueChanged.connect(self.on_parameter_changed)
         self.projectile_combo.currentTextChanged.connect(self.on_parameter_changed)
         self.single_energy_spinbox.valueChanged.connect(self.on_parameter_changed)
+        self.energy_min_spinbox.valueChanged.connect(self.on_parameter_changed)
+        self.energy_max_spinbox.valueChanged.connect(self.on_parameter_changed)
+        self.energy_step_spinbox.valueChanged.connect(self.on_parameter_changed)
         
     def set_default_values(self):
         """设置默认值"""
@@ -293,15 +297,29 @@ class BasicParametersTab(BaseParameterTab):
         """根据原子序数更新元素信息"""
         z = self.z_spinbox.value()
         a = self.a_spinbox.value()
-        
-        # 简化的元素符号映射
+
+        # 完整的元素符号映射表（前118个元素）
         elements = {
             1: 'H', 2: 'He', 3: 'Li', 4: 'Be', 5: 'B', 6: 'C', 7: 'N', 8: 'O',
             9: 'F', 10: 'Ne', 11: 'Na', 12: 'Mg', 13: 'Al', 14: 'Si', 15: 'P',
-            16: 'S', 17: 'Cl', 18: 'Ar', 19: 'K', 20: 'Ca', 26: 'Fe', 29: 'Cu',
-            47: 'Ag', 79: 'Au', 82: 'Pb', 92: 'U'
+            16: 'S', 17: 'Cl', 18: 'Ar', 19: 'K', 20: 'Ca', 21: 'Sc', 22: 'Ti',
+            23: 'V', 24: 'Cr', 25: 'Mn', 26: 'Fe', 27: 'Co', 28: 'Ni', 29: 'Cu',
+            30: 'Zn', 31: 'Ga', 32: 'Ge', 33: 'As', 34: 'Se', 35: 'Br', 36: 'Kr',
+            37: 'Rb', 38: 'Sr', 39: 'Y', 40: 'Zr', 41: 'Nb', 42: 'Mo', 43: 'Tc',
+            44: 'Ru', 45: 'Rh', 46: 'Pd', 47: 'Ag', 48: 'Cd', 49: 'In', 50: 'Sn',
+            51: 'Sb', 52: 'Te', 53: 'I', 54: 'Xe', 55: 'Cs', 56: 'Ba', 57: 'La',
+            58: 'Ce', 59: 'Pr', 60: 'Nd', 61: 'Pm', 62: 'Sm', 63: 'Eu', 64: 'Gd',
+            65: 'Tb', 66: 'Dy', 67: 'Ho', 68: 'Er', 69: 'Tm', 70: 'Yb', 71: 'Lu',
+            72: 'Hf', 73: 'Ta', 74: 'W', 75: 'Re', 76: 'Os', 77: 'Ir', 78: 'Pt',
+            79: 'Au', 80: 'Hg', 81: 'Tl', 82: 'Pb', 83: 'Bi', 84: 'Po', 85: 'At',
+            86: 'Rn', 87: 'Fr', 88: 'Ra', 89: 'Ac', 90: 'Th', 91: 'Pa', 92: 'U',
+            93: 'Np', 94: 'Pu', 95: 'Am', 96: 'Cm', 97: 'Bk', 98: 'Cf', 99: 'Es',
+            100: 'Fm', 101: 'Md', 102: 'No', 103: 'Lr', 104: 'Rf', 105: 'Db',
+            106: 'Sg', 107: 'Bh', 108: 'Hs', 109: 'Mt', 110: 'Ds', 111: 'Rg',
+            112: 'Cn', 113: 'Nh', 114: 'Fl', 115: 'Mc', 116: 'Lv', 117: 'Ts',
+            118: 'Og'
         }
-        
+
         symbol = elements.get(z, f'Z{z}')
         self.element_label.setText(symbol)
         self.nuclide_label.setText(f'{a}{symbol}')
@@ -326,11 +344,20 @@ class BasicParametersTab(BaseParameterTab):
     def on_energy_mode_changed(self):
         """能量模式改变处理"""
         single_mode = self.single_energy_radio.isChecked()
-        
-        self.single_energy_spinbox.setEnabled(single_mode)
-        self.energy_min_spinbox.setEnabled(not single_mode)
-        self.energy_max_spinbox.setEnabled(not single_mode)
-        
+
+        # 显示/隐藏相应的输入控件
+        if single_mode:
+            # 单一能量模式
+            self.single_energy_spinbox.setEnabled(True)
+            self.range_widget.setVisible(False)
+        else:
+            # 能量范围模式
+            self.single_energy_spinbox.setEnabled(False)
+            self.range_widget.setVisible(True)
+            self.energy_min_spinbox.setEnabled(True)
+            self.energy_max_spinbox.setEnabled(True)
+            self.energy_step_spinbox.setEnabled(True)
+
         self.on_parameter_changed()
         
     def on_parameter_changed(self):
@@ -343,44 +370,51 @@ class BasicParametersTab(BaseParameterTab):
         try:
             params = self.get_parameters()
             summary_lines = [
-                tr('summary_target', f"目标核: {params['element']}-{params['mass']}"),
-                tr('summary_projectile', f"入射粒子: {params['projectile']}"),
-                tr('summary_energy', f"入射能量: {params['energy']} MeV")
+                f"目标核: {params['element']}-{params['mass']}",
+                f"入射粒子: {params['projectile']}",
             ]
+
+            # 根据能量模式显示不同的能量信息
+            if 'energy' in params:
+                # 单一能量模式
+                summary_lines.append(f"入射能量: {params['energy']} MeV")
+            elif 'energy_mode' in params and params['energy_mode'] == 'range':
+                # 能量范围模式
+                energy_info = f"能量范围: {params['energy_min']}-{params['energy_max']} MeV (步长: {params['energy_step']} MeV)"
+                summary_lines.append(energy_info)
+
             self.summary_label.setText('\n'.join(summary_lines))
         except Exception as e:
-            self.summary_label.setText(tr('summary_error', f"参数摘要更新失败: {e}"))
+            self.summary_label.setText(f"参数摘要更新失败: {e}")
 
-    def on_run_calculation(self):
-        """运行计算按钮点击"""
-        self.calculation_requested.emit()
 
-    def on_validate_parameters(self):
-        """验证参数按钮点击"""
-        is_valid, message = self.validate_parameters()
-        if is_valid:
-            self.show_info_message(tr('validation_title'), tr('validation_success'))
-        else:
-            self.show_warning_message(tr('validation_title'), tr('validation_failed', f"参数验证失败：{message}"))
             
     def get_parameters(self) -> Dict[str, Any]:
         """获取当前参数"""
         # 获取入射粒子代码
         projectile_code = self.projectile_combo.currentData()
-        
+
         # 获取元素符号
         element = self.element_label.text()
-        
-        # 获取能量
-        energy = self.single_energy_spinbox.value()
-        
+
+        # 基础参数
         parameters = {
             'projectile': projectile_code,
             'element': element,
             'mass': self.a_spinbox.value(),
-            'energy': energy,
         }
-        
+
+        # 根据能量模式获取能量参数
+        if self.single_energy_radio.isChecked():
+            # 单一能量模式
+            parameters['energy'] = self.single_energy_spinbox.value()
+        else:
+            # 能量范围模式
+            parameters['energy_min'] = self.energy_min_spinbox.value()
+            parameters['energy_max'] = self.energy_max_spinbox.value()
+            parameters['energy_step'] = self.energy_step_spinbox.value()
+            parameters['energy_mode'] = 'range'
+
         return parameters
     
     def set_parameters(self, parameters: Dict[str, Any]):
@@ -440,14 +474,6 @@ class BasicParametersTab(BaseParameterTab):
         # 更新标题和描述
         self.title_label.setText(tr('basic_title'))
         self.description_label.setText(tr('basic_description'))
-
-        # 更新按钮文本
-        self.run_button.setText(tr('button_run'))
-        self.validate_button.setText(tr('button_validate'))
-
-        # 更新工具提示
-        self.run_button.setToolTip(tr('tooltip_run_calculation'))
-        self.validate_button.setToolTip(tr('tooltip_validate_params'))
 
         # 更新参数摘要
         self.update_parameter_summary()

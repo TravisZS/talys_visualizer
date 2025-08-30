@@ -42,6 +42,7 @@
   "label_energy": "Energy:",
   "label_min": "Min:",
   "label_max": "Max:",
+  "label_step": "Step:",
   "label_parameter_summary": "Current Parameter Summary:",
 
   "radio_single_energy": "Single Energy",
@@ -72,6 +73,7 @@
   "tooltip_energy_range": "Calculate for energy range (under development)",
   "tooltip_min_energy": "Minimum energy (MeV)",
   "tooltip_max_energy": "Maximum energy (MeV)",
+  "tooltip_energy_step": "Energy step size (MeV)",
   "tooltip_run_calculation": "Start TALYS calculation",
   "tooltip_validate": "Validate current parameter settings",
 

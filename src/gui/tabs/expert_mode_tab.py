@@ -18,8 +18,9 @@ from utils.i18n import tr
 class ExpertModeTab(BaseParameterTab):
     """专家模式标签页"""
 
-    def __init__(self):
+    def __init__(self, parameter_sync=None):
         super().__init__()
+        self.parameter_sync = parameter_sync
 
     def init_ui(self):
         """初始化用户界面"""
@@ -313,11 +314,108 @@ flagbasic y
                 
     def generate_input_from_params(self):
         """根据当前参数生成输入文件"""
-        # TODO: 从参数同步器获取当前参数并生成输入文件
-        self.input_status.setText("正在生成输入文件...")
-        # 这里应该调用参数同步器获取所有参数
-        self.show_info_message("生成输入", "输入文件生成功能开发中...")
-        
+        try:
+            self.input_status.setText("正在生成输入文件...")
+
+            # 从参数同步器获取当前参数
+            if self.parameter_sync is None:
+                self.show_warning_message("生成输入", "参数同步器未初始化，无法获取当前参数")
+                return
+
+            params = self.parameter_sync.get_parameters()
+
+            # 生成TALYS输入文件内容
+            input_content = self.generate_talys_input(params)
+
+            # 更新编辑器内容
+            self.input_editor.setPlainText(input_content)
+
+            self.input_status.setText("输入文件已生成")
+            self.show_info_message("生成输入", "已根据当前参数生成TALYS输入文件")
+
+        except Exception as e:
+            self.input_status.setText("生成失败")
+            self.show_error_message("生成输入", f"生成输入文件时出错：{str(e)}")
+
+    def generate_talys_input(self, params: Dict[str, Any]) -> str:
+        """生成TALYS输入文件内容"""
+        from datetime import datetime
+
+        lines = []
+
+        # 文件头注释
+        lines.append("# TALYS输入文件")
+        lines.append(f"# 由TALYS Visualizer自动生成")
+        lines.append(f"# 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        lines.append("")
+
+        # 必需参数
+        lines.append("# 必需参数")
+        lines.append(f"projectile {params.get('projectile', 'n')}")
+        lines.append(f"element {params.get('element', 'H')}")
+        lines.append(f"mass {params.get('mass', 1)}")
+
+        # 能量参数
+        if 'energy_mode' in params and params['energy_mode'] == 'range':
+            # 能量范围模式
+            energy_min = params.get('energy_min', 1.0)
+            energy_max = params.get('energy_max', 20.0)
+            energy_step = params.get('energy_step', 1.0)
+            lines.append(f"energy {energy_min} {energy_max} {energy_step}")
+        else:
+            # 单一能量模式
+            energy = params.get('energy', 1.0)
+            lines.append(f"energy {energy}")
+
+        lines.append("")
+
+        # 输出选项
+        lines.append("# 输出选项")
+        if params.get('channels', True):
+            lines.append("channels y")
+        if params.get('outspectra', False):
+            lines.append("outspectra y")
+        if params.get('outangle', False):
+            lines.append("outangle y")
+        if params.get('outlevels', False):
+            lines.append("outlevels y")
+
+        lines.append("")
+
+        # 基础控制标志
+        lines.append("# 基础控制")
+        if params.get('flagmain', True):
+            lines.append("flagmain y")
+        if params.get('flagbasic', True):
+            lines.append("flagbasic y")
+        if params.get('flagpop', False):
+            lines.append("flagpop y")
+        if params.get('flagcheck', False):
+            lines.append("flagcheck y")
+
+        lines.append("")
+
+        # 高级模型参数（如果存在）
+        advanced_params = ['ldmodel', 'strength', 'alphaomp', 'deuteronomp', 'bins', 'maxlevelstar']
+        advanced_lines = []
+        for param in advanced_params:
+            if param in params:
+                advanced_lines.append(f"{param} {params[param]}")
+
+        if advanced_lines:
+            lines.append("# 高级模型参数")
+            lines.extend(advanced_lines)
+            lines.append("")
+
+        # 自定义参数（从专家模式标签页）
+        custom_params = self.custom_params_editor.toPlainText().strip()
+        if custom_params:
+            lines.append("# 自定义参数")
+            lines.extend(custom_params.split('\n'))
+            lines.append("")
+
+        return '\n'.join(lines)
+
     def validate_input_syntax(self):
         """验证输入文件语法"""
         content = self.input_editor.toPlainText()

@@ -42,6 +42,7 @@
   "label_energy": "能量:",
   "label_min": "最小:",
   "label_max": "最大:",
+  "label_step": "步长:",
   "label_parameter_summary": "当前参数摘要:",
 
   "radio_single_energy": "单一能量",
@@ -72,6 +73,7 @@
   "tooltip_energy_range": "计算能量范围（开发中）",
   "tooltip_min_energy": "最小能量 (MeV)",
   "tooltip_max_energy": "最大能量 (MeV)",
+  "tooltip_energy_step": "能量步长 (MeV)",
   "tooltip_run_calculation": "开始TALYS计算",
   "tooltip_validate": "验证当前参数设置",
 

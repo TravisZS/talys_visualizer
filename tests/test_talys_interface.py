@@ -84,9 +84,14 @@ class TestTalysInterface(unittest.TestCase):
             'element': 'H',
             # 缺少 mass 和 energy
         }
-        
-        with self.assertRaises(ValueError):
+
+        with self.assertRaises(TalysInterfaceError):
             self.talys.generate_input_file(incomplete_params)
+
+        # 测试新的参数验证方法
+        is_valid, message = self.talys.validate_parameters(incomplete_params)
+        self.assertFalse(is_valid)
+        self.assertIn("缺少必需参数", message)
     
     def test_boolean_parameter_conversion(self):
         """测试布尔参数转换"""
